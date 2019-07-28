@@ -458,7 +458,7 @@ img {
   padding: 5px;
   border: 2px solid #99b898;
   width: 120px;
-  transition: filter 0.5s, transform 0.5s, border-radius 0.5s;
+  transition: filter 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), border-radius 0.6s ease-out;
 }
 .profile-photo:hover {
   filter: grayscale(100%);
