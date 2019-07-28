@@ -9,8 +9,7 @@
 .portfolio {
   &__item {
     max-height: 250px;
-    margin-bottom: 20px;
-    overflow: hidden;
+    margin-bottom: $gutter;
   }
   &__link {
 
@@ -18,11 +17,13 @@
   &__img {
     @for $i from 1 through 4 {
       &--#{$i} {
-        background: url('#{$path-img-portfolio}test-#{$i}.png') no-repeat;
+        background: url('#{$path-img-portfolio}project-#{$i}.png') no-repeat;
         background-position: top;
         background-size: cover;
         width: 100%;
         height: 250px;
+        border: 5px solid $white;
+        box-shadow: 0 0 1px $color-secondary;
         overflow: hidden;
       }
     }
