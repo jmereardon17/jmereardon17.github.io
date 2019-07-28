@@ -37,9 +37,10 @@ $border-lg          : 10px solid $color-primary;
 
 // transition variables
 
-$transition-smooth    : ease-in-out;
-$transition-fast      : ease-in;
-$transition-slow      : ease-out;
+$transition-smooth          : ease;
+$transition-slow-start-end  : ease-in-out;
+$transition-slow-start      : ease-in;
+$transition-slow-end        : ease-out;
 
 // File path variables
 
