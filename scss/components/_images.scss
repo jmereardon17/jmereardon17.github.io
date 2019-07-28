@@ -3,11 +3,13 @@
   padding: 5px;
   border: $border-sm;
   width: 120px;
-}
-
-.blank {
-  background-image: url('#{$path-img-portfolio}no-img.png');
-  border: 1px dotted $color-secondary;
+  transition: filter .5s, transform .5s, border-radius .5s;
+  &:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transform: scale(1.08);
+    border-radius: 5px;
+  }
 }
 
 .social-icon {
