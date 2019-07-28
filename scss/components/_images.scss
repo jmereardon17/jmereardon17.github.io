@@ -1,0 +1,16 @@
+.profile-photo {
+  @extend %rounded-image;
+  padding: 5px;
+  border: $border-sm;
+  width: 120px;
+}
+
+.blank {
+  background-image: url('#{$path-img-portfolio}no-img.png');
+  border: 1px dotted $color-secondary;
+}
+
+.social-icon {
+  width: 20px;
+  margin: 5px;
+}

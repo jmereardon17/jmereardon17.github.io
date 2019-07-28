@@ -1,0 +1,12 @@
+.main-footer {
+  text-align: center;
+  background: $color-secondary;
+  color: $white;
+  border-top: $border-lg;
+  margin-top: 30px;
+  padding: 10px 0;
+  .copy {
+    margin: 0;
+    padding: 5px 0;
+  }
+}

@@ -1,0 +1,55 @@
+// Color variables
+
+$white               : #fff;
+
+$color-primary       : #99b898;
+$color-primary-lt    : #B4C890;
+$color-primary-dk    : #809B7F;
+$color-secondary     : #2a363b;
+
+$color-text          : #333;
+$color-heading       : $color-primary;
+$color-link          : $color-primary-dk;
+$color-link-hover    : $color-primary-lt;
+
+// Font variables
+
+$font-primary        : "Rajdhani", Calibri, sans-serif;
+$font-secondary      : "Kaushan Script", Calibri, sans-serif;
+
+$font-base-size        : 16px;
+$font-base-line-height : 1.6;
+$font-base-body        : #{$font-base-size}/$font-base-line-height $font-primary;
+
+$font-weight-reg       : 400;
+$font-weight-semi-bold : 600;
+$font-weight-bold      : 700;
+
+// Border variables
+
+$border-round       : 50%;
+$border-sm          : 2px solid $color-primary;
+$border-lg          : 10px solid $color-primary;
+
+// transition variables
+
+$transition-smooth    : ease-in-out;
+$transition-fast      : ease-in;
+$transition-slow      : ease-out;
+
+// File path variables
+
+$path-img             : '../img/';
+$path-portfolio       : 'portfolio/';
+$path-social-icons    : 'social/';
+
+$path-img-portfolio    : '#{$path-img}#{$path-portfolio}';
+$path-img-social-icons : '#{$path-img}#{$path-social-icons}';
+
+// Breakpoints
+
+$breakpoints: (
+  'sm'       : 480px,
+  'med'      : 768px,
+  'lg'       : 1024px,
+);

@@ -1,0 +1,38 @@
+.main-header {
+  background: $color-secondary;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: $border-lg;
+  margin-bottom: 40px;
+}
+
+// Navigation styles
+
+.nav {
+  margin-top: 1em;
+  &__item {
+    border: 1px solid rgba($color-primary-dk, .75);
+    border-top: none;
+    &:first-child {
+      border-top: 1px solid rgba($color-primary-dk, .75);
+    }
+  }
+  &__link {
+    display: block;
+    padding: 15px 10px;
+    color: $white;
+    font-size: px-to-em(20px);
+    font-weight: $font-weight-semi-bold;
+    text-transform: uppercase;
+    letter-spacing: .050em;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    background: $color-primary;
+    &--selected {
+      background: $color-primary-dk;
+    }
+    &:hover {
+      background: $color-primary-dk;
+    }
+  }
+}
