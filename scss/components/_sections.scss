@@ -1,9 +1,11 @@
+
 .skills {
   &__item {
     font-weight: $font-weight-semi-bold;
     color: $white;
     display: inline-block;
     margin-right: 2px;
+    margin-bottom: 5px;
     background: $color-primary-dk;
     padding: 5px 10px;
     border-radius: 6px;
