@@ -2,3 +2,15 @@
 @function px-to-em($target, $context: $font-base-size) {
   @return ($target / $context) * 1em;
 }
+
+// Calculate px to percentage
+@function px-to-pc($target, $context: $max-width) {
+  @return ($target / $context) * 100%;
+}
+
+// Calculate width of columns
+@function per-line($items) {
+  $gutter-pct: px-to-pc($gutter) * 2;
+  $gutter-total: $items * $gutter-pct;
+  @return (100% / $items) - $gutter-total;
+}
