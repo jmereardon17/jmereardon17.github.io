@@ -1,20 +1,68 @@
 .main-header {
   background: $color-secondary;
   text-align: center;
-  padding: 20px 0;
-  border-bottom: $border-lg;
+  padding: 20px 0 10px;
   margin-bottom: 40px;
+  @include mq(700px) {
+    padding-bottom: 0;
+    border-bottom: $border-lg;
+  }
+  .container {
+    @include mq(872px) {
+      @include flex($dir: row, $just: space-between);
+    }
+  }
+  .header-profile {
+    @include mq(872px) {
+      @include flex($dir: row) {
+        align-items: center;
+      }
+      margin-bottom: 20px;
+    }
+  }
+  .logo {
+    @include mq(872px) {
+      text-align: left;
+      @include flex($dir: column);
+    }
+  }
 }
 
 // Navigation styles
 
+nav {
+  @include mq(872px) {
+    margin-top: auto;
+    flex-basis: 66%;
+  }
+}
+
 .nav {
   margin-top: 1em;
+  @include mq(700px) {
+    @include flex($dir: row, $just: space-between) {
+      @include mq(872px) {
+        margin-top: 0;
+        justify-content: flex-end;
+      }
+    }
+  }
   &__item {
     border: 1px solid rgba($color-primary-dk, .75);
     border-top: none;
+    @include mq(700px) {
+      display: inline-block;
+      flex: 0 148px;
+      border: none;
+    }
+    @include mq(872px) {
+      margin-left: 10px;
+    }
     &:first-child {
       border-top: 1px solid rgba($color-primary-dk, .75);
+      @include mq(700px) {
+        border: none;
+      }
     }
   }
   &__link {
@@ -28,6 +76,9 @@
     text-align: center;
     text-shadow: 0 0 8px rgba(0, 0, 0, .3);
     background: $color-primary;
+    @include mq(700px) {
+      font-size: px-to-em(18px);
+    }
     &--selected {
       background: $color-primary-dk;
     }
