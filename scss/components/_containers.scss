@@ -2,19 +2,47 @@
 
 .container {
   padding: 0 1em;
+  @include mq(820px) {
+    width: 95%;
+    margin: 0 auto;
+  }
+  @include mq(1150px) {
+    max-width: 1150px;
+  }
 }
 
 // Portfolio container
 
 .portfolio {
+  @include mq(700px) {
+    @include flex($dir: row, $just: space-between, $wrap: wrap);
+  }
   &__item {
     max-height: 250px;
     margin-bottom: $gutter;
+    @include mq(700px) {
+      flex: 0 per-line(2);
+      margin-right: $gutter;
+    }
+    @include mq(900px) {
+      flex-basis: per-line(3);
+    }
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
   }
-  &__link {
-
+  &__container {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    &:hover .portfolio__overlay {
+      transform: translateX(0);
+    }
   }
   &__img {
+
+    // Loop to create the image containers and add the images
+
     @for $i from 1 through 4 {
       &--#{$i} {
         background: url('#{$path-img-portfolio}project-#{$i}.png') no-repeat;
@@ -25,7 +53,28 @@
         border: 5px solid $white;
         box-shadow: 0 0 1px $color-secondary;
         overflow: hidden;
+        transition: transform .6s $transition-slow-end;
+        &:hover {
+          transform: translateX(100%);
+        }
       }
     }
+
   }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    background: $color-primary-dk;
+    color: $white;
+    @include flex($dir: column, $just: center) {
+      align-items: center;
+    }
+    transform: translateX(-100%);
+    transition: transform .6s $transition-slow-end;
+  }
+
 }
