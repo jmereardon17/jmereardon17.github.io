@@ -1,14 +1,19 @@
-// Media queries
+// Flexbox Settings
+@mixin flex(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  @content;
+}
 
-@mixin mq($break...) {
-  @if length($break) == 1 {
-    @media (min-width: nth($break, 1)) {
-      @content;
-    }
-  }
-  @else if length($break) == 2 {
-    @media (min-width: nth($break, 1)) and (max-width: nth($break, 2)) {
-      @content;
-    }
+// Media queries
+@mixin mq($break) {
+  @media (min-width: $break) {
+    @content;
   }
 }
