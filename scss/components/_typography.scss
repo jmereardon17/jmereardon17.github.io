@@ -3,11 +3,17 @@
   font-family: $font-secondary;
   font-size: px-to-em(28px);
   line-height: 1.2;
+  @include mq(872px) {
+    font-size: px-to-em(26px);
+  }
 }
 
 .slogan {
   color: $white;
   font-size: px-to-em(18px);
+  @include mq(872px) {
+    font-size: px-to-em(14px);
+  }
 }
 
 .headline__primary {
@@ -26,4 +32,30 @@
 
 .name {
   font-family: $font-secondary;
+}
+
+.portfolio {
+  &__name {
+    text-transform: uppercase;
+    font-size: px-to-em(23px);
+    line-height: 1.2;
+    margin-bottom: px-to-em(10px);
+  }
+  &__desc {
+    margin: 0 0 px-to-em(21px);
+    line-height: 1.4;
+  }
+  &__link {
+    color: $white;
+  	width: 70%;
+    font-size: px-to-em(18px);
+  	font-weight: $font-weight-bold;
+  	display: block;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	padding: 10px 0;
+  	border: 2px solid $white;
+  	border-radius: .5em;
+  	margin: 0;
+  }
 }
