@@ -11,9 +11,15 @@
   @content;
 }
 
-// Media queries
-@mixin mq($break) {
-  @media (min-width: $break) {
-    @content;
+@mixin mq($breaks...) {
+  @if length($breaks) == 1 {
+    @media (min-width: nth($breaks, 1)) {
+      @content;
+    }
+  }
+  @if length($breaks) == 2 {
+    @media (min-width: nth($breaks, 1)) and (max-width: nth($breaks, 2)) {
+      @content;
+    }
   }
 }
