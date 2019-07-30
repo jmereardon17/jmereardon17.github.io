@@ -33,11 +33,13 @@
     overflow: hidden;
     &:hover .portfolio__overlay {
       transform: translateX(0);
+      -webkit-transform: translateX(0);
     }
     &:hover .portfolio__img {
       @for $i from 1 through 4 {
         &--#{$i} {
           transform: translateX(100%);
+          -webkit-transform: translateX(100%);
         }
       }
     }
@@ -73,6 +75,7 @@
       align-items: center;
     }
     transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     transition: transform .6s $transition-slow-end;
     -webkit-transition: -webkit-transform .6s $transition-slow-end;
   }
