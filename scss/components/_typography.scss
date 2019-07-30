@@ -3,8 +3,11 @@
   font-family: $font-secondary;
   font-size: px-to-em(28px);
   line-height: 1.2;
-  @include mq(872px) {
+  @include mq(872px, 1024px) {
     font-size: px-to-em(26px);
+  }
+  @include mq(1025px) {
+    font-size: px-to-em(30px);
   }
 }
 
