@@ -500,21 +500,17 @@ img {
 }
 .portfolio__item {
   max-height: 250px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 @media (min-width: 700px) {
   .portfolio__item {
     flex: 0 46.5217391304%;
-    margin-right: 10px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .portfolio__item {
     flex-basis: 28.115942029%;
   }
-}
-.portfolio__item:nth-child(2n+2) {
-  margin-right: 0;
 }
 .portfolio__container {
   text-align: center;
@@ -524,19 +520,26 @@ img {
 .portfolio__container:hover .portfolio__overlay {
   transform: translateX(0);
 }
+.portfolio__container:hover .portfolio__img--1 {
+  transform: translateX(100%);
+}
+.portfolio__container:hover .portfolio__img--2 {
+  transform: translateX(100%);
+}
+.portfolio__container:hover .portfolio__img--3 {
+  transform: translateX(100%);
+}
+.portfolio__container:hover .portfolio__img--4 {
+  transform: translateX(100%);
+}
 .portfolio__img--1 {
   background: url("../img/portfolio/project-1.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 1px #2a363b;
   overflow: hidden;
   transition: transform 0.6s ease-out;
-}
-.portfolio__img--1:hover {
-  transform: translateX(100%);
 }
 .portfolio__img--2 {
   background: url("../img/portfolio/project-2.png") no-repeat;
@@ -544,13 +547,8 @@ img {
   background-size: cover;
   width: 100%;
   height: 250px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 1px #2a363b;
   overflow: hidden;
   transition: transform 0.6s ease-out;
-}
-.portfolio__img--2:hover {
-  transform: translateX(100%);
 }
 .portfolio__img--3 {
   background: url("../img/portfolio/project-3.png") no-repeat;
@@ -558,13 +556,8 @@ img {
   background-size: cover;
   width: 100%;
   height: 250px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 1px #2a363b;
   overflow: hidden;
   transition: transform 0.6s ease-out;
-}
-.portfolio__img--3:hover {
-  transform: translateX(100%);
 }
 .portfolio__img--4 {
   background: url("../img/portfolio/project-4.png") no-repeat;
@@ -572,13 +565,8 @@ img {
   background-size: cover;
   width: 100%;
   height: 250px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 1px #2a363b;
   overflow: hidden;
   transition: transform 0.6s ease-out;
-}
-.portfolio__img--4:hover {
-  transform: translateX(100%);
 }
 .portfolio__overlay {
   position: absolute;
@@ -677,6 +665,7 @@ img {
   line-height: 1.4;
 }
 .portfolio__link {
+  background: rgba(180, 200, 144, 0.85);
   color: #fff;
   width: 70%;
   font-size: 1.125em;
@@ -688,6 +677,10 @@ img {
   border: 2px solid #fff;
   border-radius: 0.5em;
   margin: 0;
+  transition: background 0.5s ease;
+}
+.portfolio__link:hover {
+  background: #99b898;
 }
 
 .main-footer {
