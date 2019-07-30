@@ -26,4 +26,8 @@
 .social-icon {
   width: 20px;
   margin: 5px;
+  &:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
 }
