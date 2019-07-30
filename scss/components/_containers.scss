@@ -7,7 +7,7 @@
     margin: 0 auto;
   }
   @include mq(1150px) {
-    max-width: 1150px;
+    max-width: $max-width;
   }
 }
 
