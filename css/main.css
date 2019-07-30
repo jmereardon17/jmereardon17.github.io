@@ -626,6 +626,10 @@ img {
   width: 20px;
   margin: 5px;
 }
+.social-icon:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
 
 .title {
   color: #fff;
