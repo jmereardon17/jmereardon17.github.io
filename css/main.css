@@ -486,7 +486,7 @@ img {
 }
 @media (min-width: 1150px) {
   .container {
-    max-width: 1150px;
+    max-width: 1200px;
   }
 }
 
@@ -504,12 +504,12 @@ img {
 }
 @media (min-width: 700px) {
   .portfolio__item {
-    flex: 0 46.5217391304%;
+    flex: 0 46.6666666667%;
   }
 }
 @media (min-width: 1024px) {
   .portfolio__item {
-    flex-basis: 28.115942029%;
+    flex-basis: 28.3333333333%;
   }
 }
 .portfolio__container {
@@ -633,9 +633,14 @@ img {
   font-size: 1.75em;
   line-height: 1.2;
 }
-@media (min-width: 872px) {
+@media (min-width: 872px) and (max-width: 1024px) {
   .title {
     font-size: 1.625em;
+  }
+}
+@media (min-width: 1025px) {
+  .title {
+    font-size: 1.875em;
   }
 }
 
