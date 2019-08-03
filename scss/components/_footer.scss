@@ -1,11 +1,11 @@
-.main-footer {
+.footer {
   text-align: center;
   background: $color-secondary;
   color: $white;
   border-top: $border-lg;
   margin-top: 30px;
   padding: 20px 0 10px;
-  .copy {
+  &__info {
     padding: 5px 1.5em;
     @include flex($dir: column, $wrap: wrap, $just: space-between) {
       @include mq(440px) {

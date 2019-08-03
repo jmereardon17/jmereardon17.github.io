@@ -1,4 +1,4 @@
-.profile-photo {
+.profile__photo {
   @extend %rounded-image;
   display: inline-block;
   background: url('#{$path-img}jamie-reardon.jpg') no-repeat center / cover;

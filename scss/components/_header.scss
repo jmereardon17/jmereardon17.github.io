@@ -12,18 +12,18 @@
       @include flex($dir: row, $just: space-between);
     }
   }
-  .header-profile {
+  .profile {
     @include mq(872px) {
       @include flex($dir: row) {
         align-items: center;
       }
       margin-bottom: 20px;
     }
-  }
-  .logo {
-    @include mq(872px) {
-      text-align: left;
-      @include flex($dir: column);
+    &__logo {
+      @include mq(872px) {
+        text-align: left;
+        @include flex($dir: column);
+      }
     }
   }
 }
