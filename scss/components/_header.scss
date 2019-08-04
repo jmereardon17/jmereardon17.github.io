@@ -79,10 +79,7 @@ nav {
     @include mq(700px) {
       font-size: px-to-em(18px);
     }
-    &--selected {
-      background: $color-primary-dk;
-    }
-    &:hover {
+    &--selected, &:hover {
       background: $color-primary-dk;
     }
   }

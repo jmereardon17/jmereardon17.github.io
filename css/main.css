@@ -482,10 +482,7 @@ main {
     font-size: 1.125em;
   }
 }
-.nav__link--selected {
-  background: #809B7F;
-}
-.nav__link:hover {
+.nav__link--selected, .nav__link:hover {
   background: #809B7F;
 }
 
