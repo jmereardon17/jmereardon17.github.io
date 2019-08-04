@@ -432,10 +432,15 @@ main {
   .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+  @supports (-ms-flow-from: flex) {
+    .nav {
+      justify-content: space-around;
+    }
   }
 }
-@media (min-width: 700px) and (min-width: 872px) {
+@media (min-width: 872px) {
   .nav {
     margin-top: 0;
     justify-content: flex-end;
@@ -448,13 +453,25 @@ main {
 @media (min-width: 700px) {
   .nav__item {
     display: inline-block;
-    flex: 0 148px;
     border: none;
+    flex: 0 148px;
+  }
+  @supports (-ms-flow-from: flex) {
+    .nav__item {
+      flex: 0 126px;
+    }
   }
 }
 @media (min-width: 872px) {
   .nav__item {
     margin-left: 10px;
+  }
+}
+@supports (-ms-flow-from: flex) {
+  @media (min-width: 1080px) {
+    .nav__item {
+      flex-basis: 148px;
+    }
   }
 }
 .nav__item:first-child {
@@ -489,7 +506,7 @@ main {
 .container {
   padding: 0 1em;
 }
-@media (min-width: 820px) {
+@media (min-width: 998px) {
   .container {
     width: 95%;
     margin: 0 auto;
@@ -762,7 +779,7 @@ main {
 }
 @media (min-width: 872px) {
   .profile__slogan {
-    font-size: 0.875em;
+    font-size: 0.9em;
   }
 }
 
