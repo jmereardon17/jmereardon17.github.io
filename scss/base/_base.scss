@@ -5,6 +5,8 @@
 body {
   font: $font-base-body;
   color: $color-text;
+  @include flex($dir: column);
+  min-height: 100vh;
 }
 a {
   text-decoration: none;
@@ -20,4 +22,7 @@ ul {
 }
 img {
   max-width: 100%;
+}
+main {
+  flex: 1;
 }
