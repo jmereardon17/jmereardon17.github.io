@@ -40,23 +40,34 @@ nav {
 .nav {
   margin-top: 1em;
   @include mq(700px) {
-    @include flex($dir: row, $just: space-between) {
-      @include mq(872px) {
-        margin-top: 0;
-        justify-content: flex-end;
+    @include flex($dir: row, $just: space-evenly) {
+      @supports (-ms-flow-from: flex) {
+        justify-content: space-around;
       }
     }
+  }
+  @include mq(872px) {
+    margin-top: 0;
+    justify-content: flex-end;
   }
   &__item {
     border: 1px solid rgba($color-primary-dk, .75);
     border-top: none;
     @include mq(700px) {
       display: inline-block;
-      flex: 0 148px;
       border: none;
+      flex: 0 148px;
+      @supports (-ms-flow-from: flex) {
+        flex: 0 126px;
+      }
     }
     @include mq(872px) {
       margin-left: 10px;
+    }
+    @supports (-ms-flow-from: flex) {
+      @include mq(1080px) {
+        flex-basis: 148px;
+      }
     }
     &:first-child {
       border-top: 1px solid rgba($color-primary-dk, .75);
