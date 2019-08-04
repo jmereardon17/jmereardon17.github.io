@@ -31,3 +31,14 @@
     -webkit-filter: grayscale(100%);
   }
 }
+
+.photo-about {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s $transition-slow-start-end;
+	transition: .3s $transition-slow-start-end;
+  &:hover {
+    -webkit-transform: scale(1.3);
+  	transform: scale(1.3);
+  }
+}
