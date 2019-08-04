@@ -7,18 +7,18 @@
   border: $border-sm;
   width: 110px;
   height: 105px;
-  transition: filter .6s cubic-bezier(0.075, 0.82, 0.165, 1), transform .6s cubic-bezier(0.075, 0.82, 0.165, 1), border-radius .6s $transition-smooth, margin-right .5s;
   -webkit-transition: -webkit-filter .6s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform .6s cubic-bezier(0.075, 0.82, 0.165, 1), border-radius .6s $transition-smooth, margin-right .5s;
+  transition: filter .6s cubic-bezier(0.075, 0.82, 0.165, 1), transform .6s cubic-bezier(0.075, 0.82, 0.165, 1), border-radius .6s $transition-smooth, margin-right .5s;
   @include mq(872px) {
     margin-right: 15px;
     width: 95px;
     height: 90px;
   }
   &:hover {
-    filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-    transform: scale(1.08);
+    filter: grayscale(100%);
     -webkit-transform: scale(1.08);
+    transform: scale(1.08);
     border-radius: 5px;
   }
 }
@@ -27,8 +27,10 @@
   width: 20px;
   margin: 5px;
   &:hover {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    // -webkit-filter: grayscale(100%);
+    // filter: grayscale(100%);
+    -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
+    filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
   }
 }
 
