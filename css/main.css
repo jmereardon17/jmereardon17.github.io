@@ -354,6 +354,9 @@ template {
 body {
   font: 16px/1.6 "Rajdhani", Calibri, sans-serif;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -373,6 +376,10 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+main {
+  flex: 1;
 }
 
 .main-header {
@@ -524,64 +531,64 @@ img {
   overflow: hidden;
 }
 .portfolio__container:hover .portfolio__overlay {
-  transform: translateX(0);
   -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 .portfolio__container:hover .portfolio__img--1 {
-  transform: translateX(100%);
   -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .portfolio__container:hover .portfolio__img--2 {
-  transform: translateX(100%);
   -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .portfolio__container:hover .portfolio__img--3 {
-  transform: translateX(100%);
   -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .portfolio__container:hover .portfolio__img--4 {
-  transform: translateX(100%);
   -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .portfolio__img--1 {
-  background: url("../img/portfolio/project-1.png") no-repeat;
+  background: url("../img/../img/portfolio/project-1.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio__img--2 {
-  background: url("../img/portfolio/project-2.png") no-repeat;
+  background: url("../img/../img/portfolio/project-2.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio__img--3 {
-  background: url("../img/portfolio/project-3.png") no-repeat;
+  background: url("../img/../img/portfolio/project-3.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio__img--4 {
-  background: url("../img/portfolio/project-4.png") no-repeat;
+  background: url("../img/../img/portfolio/project-4.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio__overlay {
   position: absolute;
@@ -596,61 +603,61 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
-  transition: transform 0.6s ease-out;
+  transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 
 .portfolio--full .portfolio__img--1 {
-  background: url("../img/portfolio/project-1.png") no-repeat;
+  background: url("../img/../img/portfolio/project-1.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio--full .portfolio__img--2 {
-  background: url("../img/portfolio/project-2.png") no-repeat;
+  background: url("../img/../img/portfolio/project-2.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio--full .portfolio__img--3 {
-  background: url("../img/portfolio/project-3.png") no-repeat;
+  background: url("../img/../img/portfolio/project-3.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio--full .portfolio__img--4 {
-  background: url("../img/portfolio/project-4.png") no-repeat;
+  background: url("../img/../img/portfolio/project-4.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 .portfolio--full .portfolio__img--5 {
-  background: url("../img/portfolio/project-5.png") no-repeat;
+  background: url("../img/../img/portfolio/project-5.png") no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
   height: 250px;
   overflow: hidden;
-  transition: transform 0.6s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
 
 @media (min-width: 700px) {
@@ -697,8 +704,8 @@ img {
   border: 2px solid #99b898;
   width: 110px;
   height: 105px;
-  transition: filter 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), border-radius 0.6s ease, margin-right 0.5s;
   -webkit-transition: -webkit-filter 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), border-radius 0.6s ease, margin-right 0.5s;
+  transition: filter 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), border-radius 0.6s ease, margin-right 0.5s;
 }
 @media (min-width: 872px) {
   .profile__photo {
@@ -708,10 +715,10 @@ img {
   }
 }
 .profile__photo:hover {
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
-  transform: scale(1.08);
+  filter: grayscale(100%);
   -webkit-transform: scale(1.08);
+  transform: scale(1.08);
   border-radius: 5px;
 }
 
@@ -720,8 +727,8 @@ img {
   margin: 5px;
 }
 .social-icon:hover {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
+  filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
 }
 
 .photo-about {
@@ -813,7 +820,6 @@ img {
   background: #2a363b;
   color: #fff;
   border-top: 10px solid #99b898;
-  margin-top: 30px;
   padding: 20px 0 10px;
 }
 .footer__info {
@@ -857,6 +863,12 @@ img {
   width: 8px;
   height: 8px;
   margin-right: 5px;
+}
+.contact .list__desc {
+  color: #99b898;
+}
+.contact .link {
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
