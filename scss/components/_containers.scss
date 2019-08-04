@@ -2,7 +2,7 @@
 
 .container {
   padding: 0 1em;
-  @include mq(820px) {
+  @include mq(998px) {
     width: 95%;
     margin: 0 auto;
   }
