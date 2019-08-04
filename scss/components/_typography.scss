@@ -15,7 +15,7 @@
     color: $white;
     font-size: px-to-em(18px);
     @include mq(872px) {
-      font-size: px-to-em(14px);
+      font-size: 0.9em;
     }
   }
 }
