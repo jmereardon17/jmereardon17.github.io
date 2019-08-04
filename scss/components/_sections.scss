@@ -1,4 +1,11 @@
+.section {
+  &__about {
+    @extend %clearfix;
+  }
+}
 
+
+// Page Lists
 .skills {
   &__item {
     font-weight: $font-weight-semi-bold;
@@ -15,5 +22,20 @@
   }
   &__name {
 
+  }
+}
+
+.contact {
+  .list__item {
+    margin-bottom: 5px;
+    &::before {
+      content: '';
+      @extend %rounded-image;
+      display: inline-block;
+      background: $color-primary-lt;
+      width: 8px;
+      height: 8px;
+      margin-right: 5px;
+    }
   }
 }
