@@ -1,3 +1,9 @@
 %rounded-image {
   border-radius: $border-round;
 }
+
+%clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
