@@ -11,6 +11,7 @@
   @content;
 }
 
+// Media queries
 @mixin mq($breaks...) {
   @if length($breaks) == 1 {
     @media (min-width: nth($breaks, 1)) {
@@ -22,4 +23,23 @@
       @content;
     }
   }
+}
+
+// Image Containers
+@mixin gallery($folder, $prefix, $min: 1, $max) {
+
+  @for $i from $min through $max {
+    &--#{$i} {
+      background: url('#{$path-img}#{$folder}#{$prefix}-#{$i}.png') no-repeat;
+      background-position: top;
+      background-size: cover;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      -webkit-transition: -webkit-transform .6s $transition-slow-end;
+      transition: transform .6s $transition-slow-end;
+      @content;
+    }
+  }
+
 }
