@@ -736,10 +736,21 @@ main {
   transform: scale(1.08);
   border-radius: 5px;
 }
+@media (hover: hover) and (pointer: fine) {
+  .profile__photo:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    border-radius: 5px;
+  }
+}
 
 .social-icon {
   width: 20px;
   margin: 5px;
+  -webkit-transition: -webkit-filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
 }
 .social-icon:hover {
   -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
@@ -824,7 +835,7 @@ main {
   border: 2px solid #fff;
   border-radius: 0.5em;
   margin: 0;
-  transition: background 0.5s ease;
+  transition: background 0.5s ease-out 0.2s;
 }
 .portfolio__link:hover {
   background: #99b898;
