@@ -39,9 +39,11 @@ $border-lg          : 10px solid $color-primary;
 // transition variables
 
 $transition-smooth          : ease;
+$transition-steady          : linear;
 $transition-slow-start-end  : ease-in-out;
 $transition-slow-start      : ease-in;
 $transition-slow-end        : ease-out;
+$transition-custom          : cubic-bezier(0.075, 0.82, 0.165, 1);
 
 // File path variables
 
