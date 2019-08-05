@@ -62,7 +62,7 @@
   	border: 2px solid $white;
   	border-radius: .5em;
   	margin: 0;
-    transition: background .5s $transition-smooth;
+    transition: background .5s $transition-slow-end .2s;
     &:hover {
       background: $color-primary;
     }
