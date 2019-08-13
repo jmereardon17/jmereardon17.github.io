@@ -82,6 +82,14 @@
   .portfolio__item {
     flex-basis: per-line(3);
   }
+  .portfolio__container:hover .portfolio__img {
+    @for $i from 1 through 5 {
+      &--#{$i} {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+    }
+  }
   .portfolio__img {
     @include gallery($folder: $path-img-portfolio, $prefix: project, $max: 5);
   }
