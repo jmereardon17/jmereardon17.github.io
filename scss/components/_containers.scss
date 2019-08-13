@@ -11,6 +11,14 @@
   }
 }
 
+.flex {
+  @include mq(1150px) {
+    @include flex($dir: row, $just: space-between, $wrap: wrap) {
+      align-items: flex-start;
+    }
+  }
+}
+
 // Portfolio container
 
 .portfolio {
@@ -25,6 +33,9 @@
     }
     @include mq(1024px) {
       flex-basis: per-line(3);
+    }
+    @include mq(1150px) {
+      flex-basis: per-line(2);
     }
   }
   &__container {
@@ -53,7 +64,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 0 20px;
+    padding: 20px;
     background: $color-primary-dk;
     color: $white;
     @include flex($dir: column, $just: center) {
@@ -68,6 +79,9 @@
 }
 
 .portfolio--full {
+  .portfolio__item {
+    flex-basis: per-line(3);
+  }
   .portfolio__img {
     @include gallery($folder: $path-img-portfolio, $prefix: project, $max: 5);
   }
