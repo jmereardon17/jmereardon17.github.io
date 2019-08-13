@@ -36,6 +36,7 @@
 
 .name {
   font-family: $font-secondary;
+  font-weight: $font-weight-bold;
 }
 
 .portfolio {
@@ -43,7 +44,15 @@
     text-transform: uppercase;
     font-size: px-to-em(23px);
     line-height: 1.2;
-    margin-bottom: px-to-em(10px);
+  }
+  &__type {
+    text-transform: uppercase;
+    font-size: px-to-em(20px);
+    color: darken($color-primary-lt, 2%);
+    display: inline-block;
+    border-bottom: 2px solid rgba($color-secondary, .1);
+    line-height: 1.3;
+    margin-bottom: 8px;
   }
   &__desc {
     margin: 0 0 px-to-em(21px);
@@ -62,6 +71,7 @@
   	border: 2px solid $white;
   	border-radius: .5em;
   	margin: 0;
+    margin-top: auto;
     transition: background .5s $transition-slow-end .2s;
     &:hover {
       background: $color-primary;
