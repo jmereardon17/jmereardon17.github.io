@@ -2,12 +2,12 @@
   &__welcome,
   &__skills {
     @include mq(1150px) {
-      flex-basis: 42%;
+      flex-basis: 39%;
     }
   }
   &__portfolio {
     @include mq(1150px) {
-      flex-basis: 55%;
+      flex-basis: 57%;
     }
   }
   &__skills {
