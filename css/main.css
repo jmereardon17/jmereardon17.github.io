@@ -640,8 +640,10 @@ main {
   transition: transform 0.6s ease-out;
 }
 
-.portfolio--full .portfolio__item {
-  flex-basis: 28.3333333333%;
+@media (min-width: 1024px) {
+  .portfolio--full .portfolio__item {
+    flex-basis: 28.3333333333%;
+  }
 }
 .portfolio--full .portfolio__container:hover .portfolio__img--1 {
   -webkit-transform: translateX(100%);
