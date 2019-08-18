@@ -80,7 +80,9 @@
 
 .portfolio--full {
   .portfolio__item {
-    flex-basis: per-line(3);
+    @include mq(1024px) {
+      flex-basis: per-line(3);
+    }
   }
   .portfolio__container:hover .portfolio__img {
     @for $i from 1 through 5 {
