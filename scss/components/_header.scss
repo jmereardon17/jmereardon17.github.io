@@ -89,6 +89,8 @@ nav {
     background: $color-primary;
     @include mq(700px) {
       font-size: px-to-em(18px);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
     }
     &--selected, &:hover {
       background: $color-primary-dk;
