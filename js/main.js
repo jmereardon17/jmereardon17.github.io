@@ -18,7 +18,7 @@ const displayPortfolio = (portfolio, items) => {
     h3.textContent = portfolio[i].name;
     const h4 = document.createElement('h4');
     h4.className = 'portfolio__type';
-    h4.textContent = portfolio[i].type;
+    h4.textContent = portfolio[i].type + ' Project';
     const p = document.createElement('p');
     p.className = 'portfolio__desc';
     p.textContent = portfolio[i].desc;
