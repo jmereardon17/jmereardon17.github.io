@@ -1,7 +1,7 @@
 .profile__photo {
   @extend %rounded-image;
   display: inline-block;
-  background: url('#{$path-img}jamie-reardon.jpg') no-repeat center / cover;
+  background: url('#{$path-img}jamie-reardon-emoji-avatar.png') no-repeat center / cover;
   background-clip: content-box;
   padding: 4px;
   border: $border-sm;

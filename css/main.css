@@ -569,68 +569,11 @@ main {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-.portfolio__container:hover .portfolio__img--1 {
+.portfolio__container:hover .portfolio__img {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
-.portfolio__container:hover .portfolio__img--2 {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.portfolio__container:hover .portfolio__img--3 {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.portfolio__container:hover .portfolio__img--4 {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.portfolio__container:hover .portfolio__img--5 {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.portfolio__img--1 {
-  background: url("../img/../img/portfolio/project-1.png") no-repeat;
-  background-position: top;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  -webkit-transition: -webkit-transform 0.6s ease-out;
-  transition: transform 0.6s ease-out;
-}
-.portfolio__img--2 {
-  background: url("../img/../img/portfolio/project-2.png") no-repeat;
-  background-position: top;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  -webkit-transition: -webkit-transform 0.6s ease-out;
-  transition: transform 0.6s ease-out;
-}
-.portfolio__img--3 {
-  background: url("../img/../img/portfolio/project-3.png") no-repeat;
-  background-position: top;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  -webkit-transition: -webkit-transform 0.6s ease-out;
-  transition: transform 0.6s ease-out;
-}
-.portfolio__img--4 {
-  background: url("../img/../img/portfolio/project-4.png") no-repeat;
-  background-position: top;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  -webkit-transition: -webkit-transform 0.6s ease-out;
-  transition: transform 0.6s ease-out;
-}
-.portfolio__img--5 {
-  background: url("../img/../img/portfolio/project-5.png") no-repeat;
+.portfolio__img {
   background-position: top;
   background-size: cover;
   width: 100%;
@@ -680,6 +623,14 @@ main {
   transform: translateX(100%);
 }
 .portfolio--full .portfolio__container:hover .portfolio__img--5 {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.portfolio--full .portfolio__container:hover .portfolio__img--6 {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.portfolio--full .portfolio__container:hover .portfolio__img--7 {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
@@ -733,20 +684,49 @@ main {
   -webkit-transition: -webkit-transform 0.6s ease-out;
   transition: transform 0.6s ease-out;
 }
-
-@media (min-width: 700px) {
-  .image-container {
-    float: left;
-    margin: 5px 20px 5px 0;
-    width: 280px;
-    height: 192px;
-    overflow: hidden;
-  }
+.portfolio--full .portfolio__img--6 {
+  background: url("../img/../img/portfolio/project-6.png") no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
 }
-@media (min-width: 872px) {
-  .image-container {
-    width: 350px;
-  }
+.portfolio--full .portfolio__img--7 {
+  background: url("../img/../img/portfolio/project-7.png") no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+}
+
+.image-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url("../img/stavanger.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5%;
+  overflow: hidden;
+}
+
+.about-content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 0 15px;
+}
+.about-content .link {
+  color: #B4C890;
+}
+.about-content .link:hover {
+  color: #809B7F;
 }
 
 @media (min-width: 700px) {
@@ -772,7 +752,7 @@ main {
 
 .profile__photo {
   display: inline-block;
-  background: url("../img/jamie-reardon.jpg") no-repeat center/cover;
+  background: url("../img/jamie-reardon-emoji-avatar.png") no-repeat center/cover;
   background-clip: content-box;
   padding: 4px;
   border: 2px solid #99b898;
@@ -864,6 +844,10 @@ main {
   font-weight: 600;
 }
 
+.intro {
+  margin-top: 0;
+}
+
 .link {
   color: #809B7F;
   font-weight: 600;
@@ -898,21 +882,24 @@ main {
 .portfolio__link {
   background: rgba(180, 200, 144, 0.85);
   color: #fff;
-  width: 70%;
-  font-size: 1.125em;
+  width: 47.99%;
+  font-size: 1em;
   font-weight: 700;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 0;
   border: 2px solid #fff;
   border-radius: 0.5em;
-  margin: 0;
+  margin: 0 10px 0 0;
   margin-top: auto;
   transition: background 0.5s ease-out 0.2s;
 }
 .portfolio__link:hover {
   background: #99b898;
+}
+.portfolio__link + .portfolio__link {
+  margin-right: 0;
 }
 
 .footer {

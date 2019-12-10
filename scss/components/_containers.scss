@@ -49,16 +49,25 @@
       transform: translateX(0);
     }
     &:hover .portfolio__img {
-      @for $i from 1 through 5 {
-        &--#{$i} {
-          -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-        }
-      }
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      // @for $i from 1 through 8 {
+      //   &--#{$i} {
+      //     -webkit-transform: translateX(100%);
+      //     transform: translateX(100%);
+      //   }
+      // }
     }
   }
   &__img {
-    @include gallery($folder: $path-img-portfolio, $prefix: project, $max: 5);
+    // @include gallery($folder: $path-img-portfolio, $prefix: project, $max: 8);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .6s $transition-slow-end;
+    transition: transform .6s $transition-slow-end;
   }
   &__overlay {
     position: absolute;
@@ -87,7 +96,7 @@
     }
   }
   .portfolio__container:hover .portfolio__img {
-    @for $i from 1 through 5 {
+    @for $i from 1 through 7 {
       &--#{$i} {
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
@@ -95,23 +104,50 @@
     }
   }
   .portfolio__img {
-    @include gallery($folder: $path-img-portfolio, $prefix: project, $max: 5);
+    @include gallery($folder: $path-img-portfolio, $prefix: project, $max: 7);
   }
 }
 
 
+// .image-container {
+//   @include mq(700px) {
+//     float: left;
+//     margin: 5px 20px 5px 0;
+//     width: 280px;
+//     height: 192px;
+//     overflow: hidden;
+//     border-radius: 4px;
+//   }
+//   @include mq(872px) {
+//     width: 350px;
+//   }
+// }
 .image-container {
-  @include mq(700px) {
-    float: left;
-    margin: 5px 20px 5px 0;
-    width: 280px;
-    height: 192px;
-    overflow: hidden;
-  }
-  @include mq(872px) {
-    width: 350px;
-  }
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.65)
+    ), url('#{$path-img}stavanger.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  color: $white;
+  padding: 5%;
+  overflow: hidden;
 }
+
+.about-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 0 15px;
+    .link {
+      color: $color-link-hover;
+      &:hover {
+        color: $color-link;
+      }
+    }
+  }
 
 .col {
   @include mq(700px) {

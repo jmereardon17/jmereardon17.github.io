@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamie Reardon | Web Developer</title>
+    <title>Jamie Reardon | Front End Web Developer</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Rajdhani:400,600,700">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -16,7 +16,7 @@
           <div class="profile__photo"></div>
           <div class="profile__logo">
             <h1 class="profile__title">Jamie Reardon</h1>
-            <span class="profile__slogan">Web Developer</span>
+            <span class="profile__slogan">Front End Web Developer</span>
           </div>
         </div>
 
@@ -56,7 +56,7 @@
 
           <h2 class="headline__primary">Welcome to my profile!</h2>
           <p class="intro">
-            I’m a current student of the Front-End Web Development tech-degree by <a class="link" href="https://teamtreehouse.com" target="_blank">Treehouse</a> looking to break into the web development industry. I was born in Liverpool, and I have grown a strong interest and passion for web development. I am excited to study and hopefully pursue a career within the field!
+            I’m a current student of the Front-End Web Development tech-degree by <a class="link" href="https://teamtreehouse.com" target="_blank">Treehouse</a> looking to break into the web development industry. I am from Liverpool, and I have grown a strong interest and passion for web development. I am excited to study and hopefully pursue a career within the field!
           </p>
 
         </section>
@@ -66,63 +66,6 @@
           <h2 class="headline__primary">My recent projects</h2>
 
           <ul class="portfolio">
-
-            <li class="portfolio__item">
-              <div class="portfolio__container">
-                <div class="portfolio__img--5"></div>
-                <div class="portfolio__overlay">
-                  <h3 class="portfolio__name">Interactive Photo Gallery</h3>
-                  <h4 class="portfolio__type">Tech-Degree Project</h4>
-                  <p class="portfolio__desc">HTML, SCSS, CSS, JavaScript with custom search filter, jQuery plugin and customized jQuery animations.</p>
-                  <a class="portfolio__link" href="https://github.com/jmereardon17/techdegree-project-5" target="_blank">
-                    View Details
-                  </a>
-                </div>
-              </div>
-            </li>
-
-            <li class="portfolio__item">
-              <div class="portfolio__container">
-                <div class="portfolio__img--1"></div>
-                <div class="portfolio__overlay">
-                  <h3 class="portfolio__name">HSolutions</h3>
-                  <h4 class="portfolio__type">Freelance Project</h4>
-                  <p class="portfolio__desc">Responsive business webpage using HTML, CSS, Bootstrap. Fully designed and developed.</p>
-                  <a class="portfolio__link" href="http://www.hsolutions.uk" target="_blank">
-                    Live View
-                  </a>
-                </div>
-              </div>
-            </li>
-
-            <li class="portfolio__item">
-              <div class="portfolio__container">
-                <div class="portfolio__img--3"></div>
-                <div class="portfolio__overlay">
-                  <h3 class="portfolio__name">An Online Registration Form</h3>
-                  <h4 class="portfolio__type">Tech-Degree Project</h4>
-                  <p class="portfolio__desc">HTML, CSS, Mobile-first approach.</p>
-                  <a class="portfolio__link" href="https://github.com/jmereardon17/techdegree-project-3" target="_blank">
-                    View Details
-                  </a>
-                </div>
-              </div>
-            </li>
-
-            <li class="portfolio__item">
-              <div class="portfolio__container">
-                <div class="portfolio__img--4"></div>
-                <div class="portfolio__overlay">
-                  <h3 class="portfolio__name">Web Style Guide</h3>
-                  <h4 class="portfolio__type">Tech-Degree Project</h4>
-                  <p class="portfolio__desc">Sass, SCSS, CSS, Mobile-first approach.</p>
-                  <a class="portfolio__link" href="https://github.com/jmereardon17/techdegree-project-4" target="_blank">
-                    View Details
-                  </a>
-                </div>
-              </div>
-            </li>
-
           </ul>
 
         </section>
@@ -130,7 +73,7 @@
         <section class="section__skills">
 
           <h2 class="headline__primary">My skills</h2>
-          <p>I currently have strong knowledge and skills in:</p>
+          <p>I have strong knowledge and skills in:</p>
 
           <ul class="skills">
             <li class="skills__item">
@@ -152,10 +95,7 @@
               <span class="skills__name">jQuery</span>
             </li>
             <li class="skills__item">
-              <span class="skills__name">Git</span>
-            </li>
-            <li class="skills__item">
-              <span class="skills__name">GitHub</span>
+              <span class="skills__name">Git/GitHub</span>
             </li>
             <li class="skills__item">
               <span class="skills__name">Responsive Web Development</span>
@@ -196,5 +136,11 @@
       </div>
 
     </footer>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      getLatestProjects(projects);
+      displayPortfolio(latestProjects, 4);
+    </script>
   </body>
 </html>
