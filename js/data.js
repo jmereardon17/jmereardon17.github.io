@@ -10,7 +10,7 @@ const projects = [
   {
     name: 'Responsive Layout',
     type: 'Techdegree',
-    desc: 'HTML, CSS, Mobile-first approach.',
+    desc: 'HTML, CSS, CSS Floats, Mobile-first approach.',
     image: 'project-2.png',
     github: 'https://github.com/jmereardon17/techdegree-project-2',
     liveView: false
@@ -18,7 +18,7 @@ const projects = [
   {
     name: 'An Online Registration Form',
     type: 'Techdegree',
-    desc: 'HTML, CSS, Mobile-first approach',
+    desc: 'HTML, CSS, CSS Flexbox, Mobile-first approach',
     image: 'project-3.png',
     github: 'https://github.com/jmereardon17/techdegree-project-3',
     liveView: false
