@@ -9,8 +9,8 @@ $color-secondary     : #2a363b;
 
 $color-text          : #333;
 $color-heading       : $color-primary;
-$color-link          : $color-primary-dk;
-$color-link-hover    : $color-primary-lt;
+$color-link          : $color-primary;
+$color-link-hover    : $color-primary-dk;
 
 // Font variables
 
@@ -34,7 +34,7 @@ $max-width    : 1200px;
 
 $border-round       : 50%;
 $border-sm          : 2px solid $color-primary;
-$border-lg          : 10px solid $color-primary;
+$border-lg          : 6px solid $color-primary;
 
 // transition variables
 
@@ -48,8 +48,16 @@ $transition-custom          : cubic-bezier(0.075, 0.82, 0.165, 1);
 // File path variables
 
 $path-img             : '../img/';
+$path-icons           : '../icons/';
 $path-portfolio       : 'portfolio/';
-$path-social-icons    : 'social/';
 
 $path-img-portfolio    : '#{$path-img}#{$path-portfolio}';
-$path-img-social-icons : '#{$path-img}#{$path-social-icons}';
+
+// Maps
+
+$social-icons: (
+  'linkedin'       : 'linkedin.svg',
+  'github'         : 'github.svg',
+  'treehouse'      : 'treehouse.svg',
+  'facebook'       : 'facebook.svg'
+);

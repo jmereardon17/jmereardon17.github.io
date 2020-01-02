@@ -1,55 +1,245 @@
+section {
+  text-align: center;
+}
+
 .section {
-  &__welcome,
-  &__skills {
-    @include mq(1150px) {
-      flex-basis: 39%;
+  &__about,
+  &__contact {
+    @include mq(700px) {
+      max-width: 65%;
+      margin: auto;
     }
   }
-  &__portfolio {
-    @include mq(1150px) {
-      flex-basis: 57%;
+  &__recent-work {
+    position: relative;
+  }
+}
+
+// Recent work projects
+.recent-work {
+  margin: 40px 0;
+  &__item {
+    margin-bottom: 70px;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
-  &__skills {
-    @include mq(1150px) {
-      margin-top: -430px;
+}
+
+.project {
+  @include mq(768px) {
+    @include flex() {
+      align-items: center;
     }
   }
-  &__about {
-    @extend %clearfix;
+  padding-bottom: 70px;
+  border-bottom: 2px solid lighten($color-text, 70%);
+  &__image {
+    margin-bottom: 12px;
+    @include mq(768px) {
+      max-width: 445px;
+      margin: 0 10% 0 0;
+    }
+    height: 296px;
+    @include mq(480px) {
+      
+    }
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 250px;
+    flex: 0 45%;
+    position: relative;
+    border: 1px solid rgba($color-primary-dk, .25);
+    &:hover::after {
+      opacity: .95;
+    }
+    &::after {
+      @include flex($just: center) {
+        align-items: center;
+      }
+      transition: opacity .5s;
+      background: $color-primary;
+      position: absolute;
+      content: 'View Full';
+      color: $white;
+      text-transform: uppercase;
+      font-weight: $font-weight-semi-bold;
+      font-size: px-to-em(50px);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  &__details {
+    @include mq(768px) {
+      align-items: flex-start;
+      text-align: left;
+    }
+    flex: 0 40%;
+    @include flex($dir: column, $just: center);
+  }
+  &__name {
+    text-transform: uppercase;
+    color: darken($color-primary-lt, 2%);
+    font-size: px-to-em(22px);
+    line-height: 1.2;
+    margin: 0;
+  }
+  &__type {
+    text-transform: uppercase;
+    color: lighten($color-text, 50%);
+    font-size: px-to-em(20px);
+    border-bottom: 2px solid rgba($color-secondary, .1);
+    line-height: 1.3;
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  &__info {
+    margin: 0;
+  }
+  &__links {
+    width: 100%;
+    margin-top: auto;
+  }
+  &__link {
+    background: rgba($color-primary-lt, .85);
+    color: $white;
+  	width: 46.99%;
+    font-size: 1em;
+  	font-weight: $font-weight-bold;
+  	display: inline-block;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	padding: 10px 0;
+  	border: 2px solid $white;
+  	border-radius: .5em;
+  	margin: 0;
+    margin-top: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: background .5s $transition-slow-end .2s;
+    @include mq(1150px) {
+      width: 47.99%
+    }
+    &:hover {
+      background: $color-primary;
+    }
+  }
+  &__link + &__link {
+    margin-left: 10px;
+  }
+}
+
+// Portfolio
+.portfolio {
+  margin: 45px 0 80px;
+  @include mq(768px) {
+    @include grid($columns: 1fr 1fr, $gap: 50px);
+  }
+  @include mq(912px) {
+    column-gap: 90px;
+  }
+  .project {
+    display: block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+    &__image,
+    &__overlay {
+      transition: transform .6s ease-out;
+    }
+    &:hover .project__image {
+      transform: translateX(-100%);
+    }
+    &:hover .project__overlay {
+      transform: translateX(0);
+    }
+    &__image {
+      cursor: auto;
+      max-width: 100%;
+      margin-right: 0;
+      background-position: top;
+      &:hover::after {
+        display: none;
+      }
+    }
+    // &__info,
+    // &__skills {
+    //   @include mq(320px, 479px) {
+    //     font-size: 15px;
+    //   }
+    // }
+    // &__skills {
+    //   @include mq(320px, 479px) {
+    //     margin: 5px 0;
+    //   }
+    // }
   }
 }
 
 
 // Page Lists
 .skills {
+  margin-top: 30px;
+  @include mq(700px) {
+    @include grid($columns: 1fr 1fr, $gap: 20px);
+  }
+  @include mq(1150px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
   &__item {
-    font-weight: $font-weight-semi-bold;
-    color: $white;
-    display: inline-block;
-    margin-right: 2px;
-    margin-bottom: 6px;
-    background: $color-primary-dk;
-    padding: 5px 10px;
-    border-radius: 6px;
-    &:nth-child(odd) {
-      background: $color-primary-lt;
+    @include mq(700px) {
+      margin-bottom: 0;
     }
+    @include flex($dir: column);
+    flex: 0 300px;
+    position: relative;
+    font-weight: $font-weight-semi-bold;
+    color: $color-text;
+    border: 2px solid rgba($color-secondary, .1);
+    padding: 5px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    opacity: 0;
+  }
+  &__info {
+    margin: 0;
+  }
+}
+
+.general-info,
+.contact {
+  @include mq(700px) {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.general-info {
+  @include mq(700px) {
+    width: 65%;
+    padding-right: 2em;
+    vertical-align: top;
+  }
+  p:first-child {
+    margin-top: 0;
   }
 }
 
 .contact {
+  @include mq(700px) {
+    width: 35%;
+    margin-right: -5px;
+  }
   .list__item {
     margin-bottom: 5px;
-    &::before {
-      content: '';
-      @extend %rounded-image;
-      display: inline-block;
-      background: $color-primary-lt;
-      width: 8px;
-      height: 8px;
-      margin-right: 5px;
-    }
   }
   .list__desc {
     color: $color-primary;
@@ -57,4 +247,8 @@
   .link {
     margin-left: 5px;
   }
+}
+
+.hidden {
+  display: none;
 }

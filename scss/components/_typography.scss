@@ -1,25 +1,44 @@
+h1 {
+  @include mq(700px) {
+    font-size: px-to-em(52px);
+  }
+  font-size: 2.8em;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+  transition: opacity .5s;
+}
+
+h2 {
+  @include mq(700px) {
+    font-size: 24px;
+  }
+  font-size: 20px;
+  font-weight: $font-weight-semi-bold;
+  margin-top: 0;
+  transition: opacity .5s;
+}
+
 .profile {
   &__title {
+    @include mq(480px) {
+      font-size: px-to-em(26px);
+    }
+    display: block;
     color: $white;
     font-family: $font-secondary;
-    font-size: px-to-em(28px);
+    font-size: 1.4em;
     line-height: 1.2;
     @media not all and (min-resolution:.001dpcm) { // Safari override
       letter-spacing: -1px;
     }
-    @include mq(872px, 1024px) {
-      font-size: px-to-em(26px);
-    }
-    @include mq(1025px) {
-      font-size: px-to-em(30px);
-    }
   }
   &__slogan {
-    color: $white;
-    font-size: px-to-em(18px);
-    @include mq(872px) {
+    @include mq(480px) {
       font-size: 0.9em;
     }
+    display: inline-block;
+    color: $white;
+    font-size: 0.85em;
   }
 }
 
@@ -29,13 +48,10 @@
   font-weight: $font-weight-semi-bold;
 }
 
-.intro {
-  margin-top: 0;
-}
-
 .link {
   color: $color-link;
   font-weight: $font-weight-semi-bold;
+  transition: color .5s;
   &:hover {
     color: $color-link-hover;
   }
@@ -51,9 +67,11 @@
     text-transform: uppercase;
     font-size: px-to-em(23px);
     line-height: 1.2;
+    text-align: left;
   }
   &__type {
     text-transform: uppercase;
+    text-align: left;
     font-size: px-to-em(20px);
     color: darken($color-primary-lt, 2%);
     display: inline-block;
@@ -89,5 +107,20 @@
   }
   &__link + &__link {
     margin-left: 10px;
+  }
+}
+
+.skills {
+  &__name {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-size: 1.25em;
+  }
+}
+
+.footer {
+  &__copy {
+    font-size: px-to-em(14.4px);
+    margin-right: 1em;
   }
 }

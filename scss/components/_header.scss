@@ -1,28 +1,27 @@
 .main-header {
-  background: $color-secondary;
-  text-align: center;
-  padding: 20px 0 10px;
+  background: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%,rgba(26, 218, 182, 0.15) 100%),
+              linear-gradient(336deg, rgba(50, 52, 221, .55),rgba(60, 239, 241, .55)),
+              $color-secondary url('../../img/background.jpg') no-repeat center / cover;
   margin-bottom: 40px;
-  @include mq(700px) {
-    padding-bottom: 0;
-    border-bottom: $border-lg;
-  }
+  height: 645px;
+  padding-top: 91px;
   .container {
-    @include mq(872px) {
-      @include flex($dir: row, $just: space-between);
+    @include flex() {
+      align-items: center;
     }
+    position: relative;
+    padding: 0 5%;
+    height: 100%;
   }
   .profile {
-    @include mq(872px) {
-      @include flex($dir: row) {
-        align-items: center;
-      }
-      margin-bottom: 20px;
+    @include flex($dir: row) {
+      align-items: center;
+      margin-right: auto;
     }
     &__logo {
+      margin-top: 5px;
       @include mq(872px) {
         text-align: left;
-        @include flex($dir: column);
       }
     }
   }
@@ -31,69 +30,107 @@
 // Navigation styles
 
 nav {
-  @include mq(872px) {
-    margin-top: auto;
-    flex-basis: 66%;
-  }
+  height: 91px;
+  box-sizing: content-box;
+  background: $color-secondary;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: border .5s;
+  z-index: 1000;
 }
 
 .nav {
-  margin-top: 1em;
-  @include mq(700px) {
-    @include flex($dir: row, $just: space-evenly) {
-      @supports (-ms-flow-from: flex) {
-        justify-content: space-around;
-      }
-    }
-  }
+  animation-delay: .8s;
   @include mq(872px) {
-    margin-top: 0;
-    justify-content: flex-end;
+    margin-right: 5%;
   }
   &__item {
-    border: 1px solid rgba($color-primary-dk, .75);
-    border-top: none;
     @include mq(700px) {
       display: inline-block;
-      border: none;
-      flex: 0 148px;
-      @supports (-ms-flow-from: flex) {
-        flex: 0 126px;
-      }
     }
     @include mq(872px) {
       margin-left: 10px;
     }
-    @supports (-ms-flow-from: flex) {
-      @include mq(1080px) {
-        flex-basis: 148px;
+    &:nth-child(2) {
+      @include mq(872px) {
+        margin-left: 0;
       }
     }
-    &:first-child {
-      border-top: 1px solid rgba($color-primary-dk, .75);
-      @include mq(700px) {
+    &--mobile {
+      border-top: 1px solid $color-primary-dk;
+      &:first-child {
         border: none;
+      }
+    }
+    &--hamburger {
+      background: url('../../icons/hamburger-icon.svg') no-repeat;
+      width: 38px;
+      height: 38px;
+      cursor: pointer;
+      @include mq(700px) {
+        display: none;
+      }
+    }
+    &--desktop {
+      display: none;
+      @include mq(700px) {
+        display: inline-block;
       }
     }
   }
   &__link {
     display: block;
-    padding: 15px 10px;
+    padding: 0 1em;
     color: $white;
     font-size: px-to-em(20px);
-    font-weight: $font-weight-semi-bold;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .050em;
     text-align: center;
-    text-shadow: 0 0 8px rgba(0, 0, 0, .3);
-    background: $color-primary;
+    transition: color .4s, background .4s;
     @include mq(700px) {
-      font-size: px-to-em(18px);
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
+      font-size: px-to-em(16.8px);
     }
-    &--selected, &:hover {
-      background: $color-primary-dk;
+    &:hover {
+      color: $color-primary;
+    }
+    &--mobile {
+      padding: .5em 1em;
+      background: $color-primary;
+      @include mq(700px) {
+        display: none;
+      }
+      &:hover {
+        background: $color-primary-dk;
+      }
     }
   }
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  animation-duration: .5s;
+}
+
+.social-media {
+  display: none;
+  @include mq(912px) {
+    display: block;
+  }
+}
+
+.intro-wrap {
+  @include mq(700px) {
+    width: 90%;
+    max-width: 1200px;
+  }
+  text-align: center;
+  margin: 7.2em auto 0;
+  padding: 0 5%;
+  color: $white;
+  line-height: 1.4;
 }

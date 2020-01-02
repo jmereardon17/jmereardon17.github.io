@@ -1,0 +1,60 @@
+// Project Overlays
+.overlay {
+  position: fixed;
+  background: rgba($color-text, .8);
+  top: 91px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal {
+  position: fixed;
+  background: $white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid $color-primary;
+  border-radius: 4px;
+  top: 91px;
+  right: 0;
+  // bottom: 2vh;
+  bottom: 3%;
+  left: 0;
+  height: 80vh;
+  max-width: 945.718px;
+  margin: auto;
+  z-index: 1;
+  @include mq(2560px) {
+    bottom: 25vh;
+    height: 50vh;
+  }
+}
+
+// All projects slide overlay
+.project__overlay {
+  @include flex($dir: column, $just: center) {
+    align-items: center;
+  }
+  position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+  transform: translateX(100%);
+  background: $color-primary;
+  padding: 20px;
+  color: $white;
+  text-align: center;
+  .project__name {
+    color: $white;
+  }
+  .project__type {
+    color: $color-primary-dk;
+    border-bottom-color: rgba(42, 54, 59, 0.1);
+  }
+  .project__link:hover {
+    background: $color-primary-dk;
+  }
+}

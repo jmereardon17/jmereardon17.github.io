@@ -1,0 +1,115 @@
+.arrow {
+  width: 60px;
+  cursor: pointer;
+  transition: transform .3s, opacity .5s;
+  &--left {
+    transform: translateX(-300vh);
+  }
+  &--right {
+    margin-right: -60px;
+  }
+}
+
+.macbook {
+  @include mq(480px) {
+    width: 180px;
+  }
+  @include mq(700px) {
+    right: -112px;
+    opacity: .2;
+  }
+  @include mq(912px) {
+    right: -142px;
+  }
+  width: 100px;
+  opacity: .15;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: -1;
+}
+
+.css-icon {
+  transform: rotate(-40deg);
+  position: absolute;
+  top: 187px;
+  left: -32px;
+  z-index: -1;
+}
+
+.html-icon {
+  transform: rotate(-40deg);
+  position: absolute;
+  top: 73px;
+  left: -25px;
+  z-index: -1;
+}
+
+.js-icon {
+  transform: rotate(-40deg);
+  position: absolute;
+  top: 281px;
+  left: 13px;
+  z-index: -1;
+}
+
+.html-icon,
+.css-icon,
+.js-icon {
+  width: 50px;
+  left: 5%;
+  opacity: .15;
+  @include mq(480px) {
+    width: 70px;
+  }
+  @include mq(700px) {
+    opacity: .2;
+    left: -93px;
+  }
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 3.5em;
+  color: $color-primary;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+.skills__item > .skills__image {
+  @include mq(700px) {
+    max-width: 150px;
+  }
+  width: 190px;
+  margin: 0 auto auto;
+}
+
+.email-icon {
+  width: 20px;
+}
+
+.linkedin-icon {
+  width: 20px;
+}
+
+@each $theme, $icon in $social-icons {
+  .icon-#{$theme} {
+    background: url('#{$path-icons}#{$icon}') no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-left: 15px;
+    text-indent: -9999px;
+    -webkit-transition: -webkit-filter .3s $transition-slow-start-end;
+    transition: filter .3s $transition-slow-start-end;
+    &:hover {
+      -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
+      filter: contrast(30%) saturate(100%) invert(20%) hue-rotate(5deg);
+    }
+  }
+}
+
+.icon-linkedin {
+  margin-left: 0;
+}

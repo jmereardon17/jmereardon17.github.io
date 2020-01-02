@@ -1,0 +1,42 @@
+.btn {
+  cursor: pointer;
+  font-weight: $font-weight-semi-bold;
+  text-transform: uppercase;
+  border: 2px solid $white;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  letter-spacing: .050em;
+  transition: background .5s ease-out .2s, color .5s ease-out .2s;
+  &--work {
+    @include mq(700px) {
+      width: 225.27px;
+    }
+    transition: opacity .5s, background .5s ease-out .2s, color .5s ease-out .2s;
+    color: $white;
+    margin: 1.5em auto 0;
+    font-size: 1.15em;
+    padding: 1.2em 1em;
+    &:hover {
+      background: $white;
+      color: #3D8FE3;
+    }
+  }
+  &.project__link {
+  }
+  &--all-projects {
+    @include mq(700px) {
+      width: 22%;
+      max-width: 225px; 
+    }
+    color: $white;
+    background: $color-text;
+    padding: 1em 0;
+    width: 150px;
+    &:hover {
+      background: $color-primary;
+      color: $white;
+    }
+  }
+}

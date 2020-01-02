@@ -1,9 +1,9 @@
 // Page layout container
 
 .container {
-  padding: 0 1em;
+  padding: 0 5%;
   @include mq(998px) {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
   @include mq(1150px) {
@@ -22,20 +22,10 @@
 // Portfolio container
 
 .portfolio {
-  @include mq(700px) {
-    @include flex($dir: row, $just: space-between, $wrap: wrap);
-  }
   &__item {
-    max-height: 250px;
     margin-bottom: 30px;
-    @include mq(700px) {
-      flex: 0 per-line(2);
-    }
-    @include mq(1024px) {
-      flex-basis: per-line(3);
-    }
-    @include mq(1150px) {
-      flex-basis: per-line(2);
+    @include mq(768px) {
+      margin-bottom: 0;
     }
   }
   &__container {
@@ -51,19 +41,13 @@
     &:hover .portfolio__img {
       -webkit-transform: translateX(100%);
       transform: translateX(100%);
-      // @for $i from 1 through 8 {
-      //   &--#{$i} {
-      //     -webkit-transform: translateX(100%);
-      //     transform: translateX(100%);
-      //   }
-      // }
     }
   }
   &__img {
-    // @include gallery($folder: $path-img-portfolio, $prefix: project, $max: 8);
     background-position: top;
     background-size: cover;
     width: 100%;
+    max-width: 445px;
     height: 250px;
     overflow: hidden;
     -webkit-transition: -webkit-transform .6s $transition-slow-end;
@@ -154,19 +138,5 @@
   @include mq(700px) {
     display: inline-block;
     vertical-align: top;
-  }
-}
-
-.primary {
-  @include mq(700px) {
-    width: 60%;
-    padding-right: 2em;
-  }
-}
-
-.secondary {
-  @include mq(700px) {
-    margin-right: -5px;
-    width: 40%;
   }
 }

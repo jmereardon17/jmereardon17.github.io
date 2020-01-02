@@ -3,18 +3,17 @@
   background: $color-secondary;
   color: $white;
   border-top: $border-lg;
-  padding: 20px 0 10px;
-  &__info {
-    padding: 5px 1.5em;
-    @include flex($dir: column, $wrap: wrap, $just: space-between) {
-      @include mq(440px) {
-        flex-direction: row;
-        width: 420px;
-        margin: 0 auto;
-      }
+  height: 91px;
+  @include flex($just: center) {
+    align-items: center;
+  }
+  &__social-media {
+    margin-top: 10px;
+    @include mq(912px) {
+      display: none;
     }
   }
-  .name {
-    margin-right: 5px;
+  .container {
+    width: 100%;
   }
 }
