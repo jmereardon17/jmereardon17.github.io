@@ -243,7 +243,7 @@ window.onload = () => {
     item.addEventListener('click', e => {
       let projectType = item.parentNode.parentNode;
       let image = item.firstElementChild;
-      if (projectType.className === 'recent-work' || e.target.textContent === 'View Full') {
+      if (projectType.className === 'recent-work' && e.target === image || e.target.textContent === 'View Full') {
         let imageURL = image.getAttribute('style');
         let projectNo = parseInt(imageURL.match(/(\d+)/));
         displayOverlay(projectNo);
