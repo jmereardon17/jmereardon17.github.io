@@ -15,7 +15,7 @@ const projects = [
     skills: 'HTML, CSS Floats, Mobile-first.',
     image: 'project-2.png',
     github: 'https://github.com/jmereardon17/techdegree-project-2',
-    liveView: false
+    liveView: '/techdegree-project-2'
   },
   {
     name: 'Online Registration Form',
@@ -24,7 +24,7 @@ const projects = [
     skills: 'HTML, CSS Flexbox, Mobile-first.',
     image: 'project-3.png',
     github: 'https://github.com/jmereardon17/techdegree-project-3',
-    liveView: false
+    liveView: '/techdegree-project-3'
   },
   {
     name: 'Web Style Guide',
@@ -33,7 +33,7 @@ const projects = [
     skills: 'Sass, SCSS, Mobile-first.',
     image: 'project-4.png',
     github: 'https://github.com/jmereardon17/techdegree-project-4',
-    liveView: false
+    liveView: '/techdegree-project-4'
   },
   {
     name: 'HSolutions',
@@ -51,7 +51,7 @@ const projects = [
     skills: 'HTML, SCSS, JavaScript, jQuery plugin.',
     image: 'project-6.png',
     github: 'https://github.com/jmereardon17/techdegree-project-5',
-    liveView: false
+    liveView: '/techdegree-project-5'
   },
   {
     name: 'Game Show App',
@@ -60,7 +60,7 @@ const projects = [
     skills: 'JavaScript, jQuery, CSS.',
     image: 'project-7.png',
     github: 'https://github.com/jmereardon17/techdegree-project-6',
-    liveView: false
+    liveView: '/techdegree-project-6'
   },
   {
     name: 'WebApp Dashboard',
@@ -69,7 +69,7 @@ const projects = [
     skills: 'JavaScript, jQuery, SVG, Sass, SCSS, CSS Grid, Mobile-first.',
     image: 'project-8.png',
     github: 'https://github.com/jmereardon17/techdegree-project-7',
-    liveView: false
+    liveView: '/techdegree-project-7'
   },
   {
     name: 'Employee Directory',
@@ -78,7 +78,7 @@ const projects = [
     skills: 'JavaScript, Sass, SCSS, CSS Grid, CSS Flexbox, Mobile-first.',
     image: 'project-9.png',
     github: 'https://github.com/jmereardon17/techdegree-project-8',
-    liveView: false
+    liveView: '/techdegree-project-8'
   }
 ];
 
