@@ -4,106 +4,175 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jamie Reardon | Front End Web Developer</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Rajdhani:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Rajdhani:400,500,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="main-header" id="top">
+      <nav role="navigation">
+        <div class="container">
 
-      <div class="container">
-
-        <div class="profile">
-          <div class="profile__photo"></div>
-          <div class="profile__logo">
-            <h1 class="profile__title">Jamie Reardon</h1>
-            <span class="profile__slogan">Front End Web Developer</span>
+          <div class="profile">
+            <div class="profile__photo animated fadeIn"></div>
+            <div class="profile__logo">
+              <span class="profile__title animated bounceInLeft">Jamie Reardon</span>
+              <span class="profile__slogan animated bounceInLeft">Front End Web Developer</span>
+            </div>
           </div>
-        </div>
 
-        <nav role="navigation">
-
-          <ul class="nav">
-
-            <li class="nav__item">
-              <a class="nav__link nav__link--selected" href="index.html">Home</a>
+          <ul class="nav animated fadeIn">
+            <li class="nav__item nav__item--hamburger">
             </li>
-
-            <li class="nav__item">
-              <a class="nav__link" href="about.html">About Me</a>
+            <li class="nav__item nav__item--desktop">
+              <a class="nav__link" href="#about">About</a>
             </li>
-
-            <li class="nav__item">
-              <a class="nav__link" href="portfolio.html">Portfolio</a>
+            <li class="nav__item nav__item--desktop">
+              <a class="nav__link" href="#recent">Portfolio</a>
             </li>
-
-            <li class="nav__item">
-              <a class="nav__link" href="contact.html">Contact Me</a>
+            <li class="nav__item nav__item--desktop">
+              <a class="nav__link" href="#contact">Contact</a>
             </li>
-
           </ul>
 
-        </nav>
+          <ul class="mobile-nav hidden animated">
+            <li class="nav__item nav__item--mobile">
+              <a class="nav__link nav__link--mobile" href="#about">About</a>
+            </li>
+            <li class="nav__item nav__item--mobile">
+              <a class="nav__link nav__link--mobile" href="#recent">Portfolio</a>
+            </li>
+            <li class="nav__item nav__item--mobile">
+              <a class="nav__link nav__link--mobile" href="#contact">Contact</a>
+            </li>
+          </ul>
 
+          <div class="social-media animated bounceInRight">
+            <a class="icon-linkedin" href="https://www.linkedin.com/in/jmereardon17" target="_blank">LinkedIn</a>
+            <a class="icon-github" href="https://www.github.com/jmereardon17" target="_blank">GitHub</a>
+            <a class="icon-treehouse" href="https://teamtreehouse.com/jamiereardon" target="_blank">Treehouse</a>
+            <a class="icon-facebook" href="https://www.facebook.com/jme.reardon17" target="_blank">Facebook</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <div class="intro-wrap">
+        <h1>Hi, I'm Jamie</h1>
+        <h2>I'm a front-end web developer who is passionate about mobile responsive web development and providing an engaging user experience on all platforms.</h2>
+        <a class="btn btn--work" href="#recent">Check My Work</a>
       </div>
-
     </header>
 
     <main>
 
-      <div class="container flex">
+      <div class="container">
 
-        <section class="section__welcome">
+        <section class="section__about" id="about">
 
-          <h2 class="headline__primary">Welcome!</h2>
-          <p class="intro">
-            Hi there! Thanks for visting my profile, I’m a current student of the Front-End Web Development tech-degree of <a class="link" href="https://teamtreehouse.com" target="_blank">Treehouse</a> looking to break into the web development industry. I am from Liverpool, and I have grown a strong interest and passion for web development. I am excited to study and hopefully pursue a career within the field!
-          </p>
+          <div class="about-card">
+            <h3 class="headline__primary">About Me</h3>
+            <div class="about-card__content">
+              <p>Hi there! Thanks for visting my profile, I'm a Front End Web Developer from Liverpool who loves technology. I have been a web developer since 2018, where I studied a techdegree with <a class="link" href="https://teamtreehouse.com" target="_blank">Treehouse</a>. Click the arrow below to find out more about me.</p>
+            </div>
+            <img class="arrow animated arrow--right" src="icons/arrow-right.svg" alt="Right Angled Arrow Icon">
+            <img class="arrow animated arrow--left" src="icons/arrow-left.svg" alt="Left Angled Arrow Icon">
+          </div>
 
         </section>
 
-        <section class="section__portfolio">
+        <section class="section__recent-work" id="recent">
 
-          <h2 class="headline__primary">Recent projects</h2>
+          <h3 class="headline__primary">Recent Work</h3>
 
-          <ul class="portfolio">
+          <ul class="recent-work">
           </ul>
+          <div class="overlay animated hidden">
+            <div class="modal"></div>
+          </div>
+          <a class="btn btn--all-projects">View All</a>
 
         </section>
+
+        <ul class="portfolio hidden">
+        </ul>
 
         <section class="section__skills">
 
-          <h2 class="headline__primary">Skills</h2>
-          <p>I have strong knowledge and skills in:</p>
+          <h3 class="headline__primary">Skill Set</h3>
+          <p>I have strong knowledge and experience with:</p>
 
           <ul class="skills">
-            <li class="skills__item">
-              <span class="skills__name">HTML</span>
+            <li class="skills__item animated">
+              <div class="skills__image">
+                <img class="browser-code-icon" src="icons/browser-code-icon.svg" alt="Browser Code Icon">
+              </div>
+              <div class="skills__details">
+                <h4 class="skills__name">HTML, CSS, JavaScript</h4>
+                <p class="skills__info">The common core coding languages on which all modern websites are built.</p>
+              </div>
             </li>
-            <li class="skills__item">
-              <span class="skills__name">CSS</span>
+            <li class="skills__item animated">
+              <div class="skills__image">
+                <img class="devices-check-icon" src="icons/devices-check-icon.svg" alt="Devices Check Icon">
+              </div>
+              <div class="skills__details">
+                <h4 class="skills__name">Responsive Web Development</h4>
+                <p class="skills__info">Developing web pages that look and function well on multiple screen sizes.</p>
+              </div>
             </li>
-            <li class="skills__item">
-              <span class="skills__name">Sass</span>
+            <li class="skills__item animated">
+              <div class="skills__image">
+                <img class="devices-check-icon" src="icons/sass.svg" alt="Sass Icon">
+              </div>
+              <div class="skills__details">
+                <h4 class="skills__name">Sass</h4>
+                <p class="skills__info">Used by many developers to make styling web pages with CSS easier and faster.</p>
+              </div>
             </li>
-            <li class="skills__item">
-              <span class="skills__name">SCSS</span>
+            <li class="skills__item animated">
+              <div class="skills__image">
+                <img class="devices-check-icon" src="icons/git.svg" alt="Git Icon">
+              </div>
+              <div class="skills__details">
+                <h4 class="skills__name">Git & GitHub</h4>
+                <p class="skills__info">A version control system which manages the different versions of project files.</p>
+              </div>
             </li>
-            <li class="skills__item">
-              <span class="skills__name">JavaScript</span>
-            </li>
-            <li class="skills__item">
-              <span class="skills__name">jQuery</span>
-            </li>
-            <li class="skills__item">
-              <span class="skills__name">Git/GitHub</span>
-            </li>
-            <li class="skills__item">
-              <span class="skills__name">Responsive Web Development</span>
+            <li class="skills__item animated">
+              <div class="skills__image">
+                <img class="devices-check-icon" src="icons/code-icon.svg" alt="Terminal Icon">
+              </div>
+              <div class="skills__details">
+                <h4 class="skills__name">Terminal</h4>
+                <p class="skills__info">The most powerful way to interact with computers is using text, in the terminal.</p>
+              </div>
             </li>
           </ul>
 
         </section>
 
+        <section class="section__contact" id="contact">
+
+          <h3 class="headline__primary">Get In Touch</h3>
+
+          <div class="general-info">
+            <p>I am currently looking for work. If you are interested or have any questions, please don't hesitate to contact me!</p>
+            <p>Email is my preferred and best method of contact.</p>
+          </div>
+
+          <ul class="contact">
+            <li class="list__item">
+              <img class="email-icon" src="icons/email-icon.svg" alt="Mail by Barracuda from the Noun Project">
+              <a href="mailto:jamie.reardon91@gmail.com" class="link">jamie.reardon91@gmail.com</a>
+            </li>
+            <li class="list__item">
+              <img class="linkedin-icon" src="icons/linkedin-contact.svg" alt="LinkedIn Logo">
+              <a href="http://www.linkedin.com/in/jmereardon17" target="_blank" class="link">jmereardon17</a>
+            </li>
+          </ul>
+
+        </section>
       </div>
 
     </main>
@@ -112,35 +181,25 @@
 
       <div class="container">
 
-        <a href="https://www.linkedin.com/in/jmereardon17" target="_blank">
-          <img class="social-icon" src="img/social/linkedin-wrap.png" alt="Facebook Logo">
-        </a>
-        <a href="https://www.github.com/jmereardon17" target="_blank">
-          <img class="social-icon" src="img/social/github-wrap.png" alt="GitHub Logo">
-        </a>
-        <a href="https://teamtreehouse.com/jamiereardon" target="_blank">
-          <img class="social-icon" src="img/social/treehouse-wrap.png" alt="Treehouse Logo">
-        </a>
-        <a href="https://www.facebook.com/jme.reardon17" target="_blank">
-          <img class="social-icon" src="img/social/facebook-wrap.png" alt="Facebook Logo">
-        </a>
-
         <div class="footer__info">
-          <span>All Rights Reserved &copy;</span>
-          <span>
-            <span class="name">Jamie Reardon</span>
-            <a href="#top" class="link">Back to top &raquo;</a>
-          </span>
+          <span class="footer__copy">All Rights Reserved &copy;</span>
+          <span class="name">Jamie Reardon</span>
+          <div class="footer__social-media">
+            <a class="icon-linkedin" href="https://www.linkedin.com/in/jmereardon17" target="_blank">LinkedIn</a>
+            <a class="icon-github" href="https://www.github.com/jmereardon17" target="_blank">GitHub</a>
+            <a class="icon-treehouse" href="https://teamtreehouse.com/jamiereardon" target="_blank">Treehouse</a>
+            <a class="icon-facebook" href="https://www.facebook.com/jme.reardon17" target="_blank">Facebook</a>
+          </div>
         </div>
 
       </div>
 
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      getLatestProjects(projects);
-      displayPortfolio(latestProjects, 4);
-    </script>
   </body>
 </html>
