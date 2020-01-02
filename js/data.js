@@ -82,7 +82,7 @@ const projects = [
   }
 ];
 
-const intro = `<p>Hi there! Thanks for visting my profile, I'm a Front-End Web Developer from Liverpool who loves technology. I have been a web developer since 2018, where I studied a techdegree with <a class="link" href="https://teamtreehouse.com" target="_blank">Treehouse</a>. Click the arrow below to find out more about me.</p>`;
+const intro = `<p>Hi there! Thanks for visiting my profile, I'm a Front-End Web Developer from Liverpool who loves technology. I have been a web developer since 2018, where I studied a techdegree with <a class="link" href="https://teamtreehouse.com" target="_blank">Treehouse</a>. Click the arrow below to find out more about me.</p>`;
 
 const about = `
   <p>I’m a tech enthusiast living in England, Liverpool. I spend my days learning and coding in Front End development for the web. I got my hands on my first computer when I was 13 where I spent most of my time on the internet, socializing with people from all over the world.</p>
