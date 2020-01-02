@@ -6,7 +6,7 @@ const projects = [
     skills: 'HTML, CSS.',
     image: 'project-1.png',
     github: 'https://github.com/jmereardon17/techdegree-project-1',
-    liveView: false
+    liveView: '/techdegree-project-1'
   },
   {
     name: 'Responsive Layout',
