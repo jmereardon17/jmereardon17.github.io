@@ -24,7 +24,7 @@ let latestProjects = [];
   HELPER FUNCTIONS
 ================================================ */
 
-const displayPortfolio = () => {
+const generatePortfolio = () => {
   for (let i = 0; i < projects.length; i += 1) {
     const li = document.createElement('li');
     li.className = 'portfolio__item';
@@ -156,7 +156,7 @@ const toggleElementStyles = scrollPos => {
   } else {
     nav.style.borderBottom = 'none';
   }
-  if (scrollPos >= 2433) {
+  if (scrollPos >= 2413) {
     let delay = 0;
     for (let i = 0; i < skills.length; i += 1) {
       delay += 0.5;
@@ -225,7 +225,7 @@ const togglePortfolio = () => {
 }
 
 getLatestProjects(projects);
-displayPortfolio();
+generatePortfolio();
 
 /* ==============================================
   EVENT LISTENERS
