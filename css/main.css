@@ -1328,12 +1328,11 @@ section {
   display: inline-block;
   margin-left: 15px;
   text-indent: -9999px;
-  -webkit-transition: -webkit-filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .icon-linkedin:hover {
-  -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
-  filter: contrast(30%) saturate(100%) invert(20%) hue-rotate(5deg);
+  opacity: 0.5;
 }
 
 .icon-github {
@@ -1343,12 +1342,11 @@ section {
   display: inline-block;
   margin-left: 15px;
   text-indent: -9999px;
-  -webkit-transition: -webkit-filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .icon-github:hover {
-  -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
-  filter: contrast(30%) saturate(100%) invert(20%) hue-rotate(5deg);
+  opacity: 0.5;
 }
 
 .icon-treehouse {
@@ -1358,12 +1356,11 @@ section {
   display: inline-block;
   margin-left: 15px;
   text-indent: -9999px;
-  -webkit-transition: -webkit-filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .icon-treehouse:hover {
-  -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
-  filter: contrast(30%) saturate(100%) invert(20%) hue-rotate(5deg);
+  opacity: 0.5;
 }
 
 .icon-facebook {
@@ -1373,12 +1370,11 @@ section {
   display: inline-block;
   margin-left: 15px;
   text-indent: -9999px;
-  -webkit-transition: -webkit-filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .icon-facebook:hover {
-  -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
-  filter: contrast(30%) saturate(100%) invert(20%) hue-rotate(5deg);
+  opacity: 0.5;
 }
 
 .icon-linkedin {

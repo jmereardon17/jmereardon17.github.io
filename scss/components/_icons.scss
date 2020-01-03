@@ -101,11 +101,10 @@
     display: inline-block;
     margin-left: 15px;
     text-indent: -9999px;
-    -webkit-transition: -webkit-filter .3s $transition-slow-start-end;
-    transition: filter .3s $transition-slow-start-end;
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
     &:hover {
-      -webkit-filter: invert(63%) sepia(24%) saturate(282%) hue-rotate(70deg) brightness(88%) contrast(93%);
-      filter: contrast(30%) saturate(100%) invert(20%) hue-rotate(5deg);
+      opacity: .5;
     }
   }
 }
