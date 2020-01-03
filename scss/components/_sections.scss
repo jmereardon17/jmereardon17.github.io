@@ -170,17 +170,6 @@ section {
         display: none;
       }
     }
-    // &__info,
-    // &__skills {
-    //   @include mq(320px, 479px) {
-    //     font-size: 15px;
-    //   }
-    // }
-    // &__skills {
-    //   @include mq(320px, 479px) {
-    //     margin: 5px 0;
-    //   }
-    // }
   }
 }
 
@@ -204,7 +193,7 @@ section {
     font-weight: $font-weight-semi-bold;
     color: $color-text;
     border: 2px solid rgba($color-secondary, .1);
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 6px;
     margin-bottom: 30px;
     opacity: 0;
