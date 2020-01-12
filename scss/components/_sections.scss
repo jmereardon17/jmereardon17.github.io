@@ -13,6 +13,10 @@ section {
   &__recent-work {
     position: relative;
   }
+  &__skills,
+  &__contact {
+    margin-top: 60px;
+  }
 }
 
 // Recent work projects
@@ -22,6 +26,9 @@ section {
     margin-bottom: 70px;
     &:last-child {
       margin-bottom: 0;
+      & .project {
+        border-bottom: none;
+      }
     }
   }
 }
@@ -169,6 +176,9 @@ section {
       &:hover::after {
         display: none;
       }
+    }
+    &__link {
+      border-color: rgba($white, .6);
     }
   }
 }

@@ -390,7 +390,7 @@ main {
 }
 
 .main-header {
-  background: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%, rgba(26, 218, 182, 0.15) 100%), linear-gradient(336deg, rgba(50, 52, 221, 0.55), rgba(60, 239, 241, 0.55)), #2a363b url("../../img/background.jpg") no-repeat center/cover;
+  background: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%, rgba(26, 218, 182, 0.15) 100%), linear-gradient(336deg, rgba(50, 52, 221, 0.55), rgba(60, 239, 241, 0.55)), #2a363b url("../img/background.jpg") no-repeat center/cover;
   margin-bottom: 40px;
   height: 645px;
   padding-top: 91px;
@@ -966,6 +966,9 @@ section {
 .section__recent-work {
   position: relative;
 }
+.section__skills, .section__contact {
+  margin-top: 60px;
+}
 
 .recent-work {
   margin: 40px 0;
@@ -975,6 +978,9 @@ section {
 }
 .recent-work__item:last-child {
   margin-bottom: 0;
+}
+.recent-work__item:last-child .project {
+  border-bottom: none;
 }
 
 .project {
@@ -1132,6 +1138,9 @@ section {
 }
 .portfolio .project__image:hover::after {
   display: none;
+}
+.portfolio .project__link {
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .skills {

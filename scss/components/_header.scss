@@ -1,7 +1,7 @@
 .main-header {
   background: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%,rgba(26, 218, 182, 0.15) 100%),
               linear-gradient(336deg, rgba(50, 52, 221, .55),rgba(60, 239, 241, .55)),
-              $color-secondary url('../../img/background.jpg') no-repeat center / cover;
+              $color-secondary url('#{$path-img}background.jpg') no-repeat center / cover;
   margin-bottom: 40px;
   height: 645px;
   padding-top: 91px;
