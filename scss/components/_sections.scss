@@ -42,18 +42,16 @@ section {
   padding-bottom: 70px;
   border-bottom: 2px solid lighten($color-text, 70%);
   &__image {
-    margin-bottom: 12px;
     @include mq(768px) {
       max-width: 445px;
       margin: 0 10% 0 0;
     }
+    margin-bottom: 12px;
     height: 296px;
-    @include mq(480px) {
-      
-    }
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
     width: 100%;
     min-height: 250px;
     flex: 0 45%;

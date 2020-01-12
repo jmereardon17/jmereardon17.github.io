@@ -999,6 +999,7 @@ section {
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   width: 100%;
   min-height: 250px;
   flex: 0 45%;
