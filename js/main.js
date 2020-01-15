@@ -245,7 +245,8 @@ window.onload = () => {
       let image = item.firstElementChild;
       if (projectType.className === 'recent-work' && e.target === image || e.target.textContent === 'View Full') {
         let imageURL = image.getAttribute('style');
-        let projectNo = parseInt(imageURL.match(/(\d+)/));
+        let getProjectNo = imageURL.match(/-\d+/);
+        let projectNo = parseInt(getProjectNo[0].replace(/-/, ''));
         displayOverlay(projectNo);
       }
     });
