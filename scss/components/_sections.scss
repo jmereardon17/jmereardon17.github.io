@@ -3,8 +3,7 @@ section {
 }
 
 .section {
-  &__about,
-  &__contact {
+  &__about {
     @include mq(700px) {
       max-width: 65%;
       margin: auto;
@@ -16,6 +15,12 @@ section {
   &__skills,
   &__contact {
     margin-top: 60px;
+  }
+  &__contact {
+    @include mq(912px) {
+      max-width: 70%;
+      margin: auto;
+    }
   }
 }
 
@@ -56,7 +61,7 @@ section {
     min-height: 250px;
     flex: 0 45%;
     position: relative;
-    border: 1px solid rgba($color-primary-dk, .25);
+    border: .5px solid rgba($color-primary-dk, .25);
     &:hover::after {
       opacity: .95;
     }
@@ -69,11 +74,12 @@ section {
       position: absolute;
       content: 'View Full';
       color: $white;
+      border-right: 2px solid $color-primary;
       text-transform: uppercase;
       font-weight: $font-weight-semi-bold;
       font-size: px-to-em(50px);
       top: 0;
-      left: 0;
+      left: -1px;
       width: 100%;
       height: 100%;
       opacity: 0;
@@ -221,7 +227,7 @@ section {
 
 .general-info {
   @include mq(700px) {
-    width: 65%;
+    width: 62%;
     padding-right: 2em;
     vertical-align: top;
   }
@@ -232,7 +238,7 @@ section {
 
 .contact {
   @include mq(700px) {
-    width: 35%;
+    width: 38%;
     margin-right: -5px;
   }
   .list__item {
