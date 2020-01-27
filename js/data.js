@@ -79,6 +79,15 @@ const projects = [
     image: 'project-9.png',
     github: 'https://github.com/jmereardon17/techdegree-project-8',
     liveView: '/techdegree-project-8'
+  },
+  {
+    name: 'Randomized Quiz Game',
+    type: 'Practice',
+    info: 'Create a Star Wars themed randomized quiz game using JavaScript.',
+    skills: 'JavaScript, jQuery, Sass, CSS Flexbox, Mobile-first.',
+    image: 'project-10.png',
+    github: 'https://github.com/jmereardon17/star-wars-randomized-quiz',
+    liveView: '/star-wars-randomized-quiz'
   }
 ];
 
