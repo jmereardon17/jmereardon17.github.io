@@ -51,7 +51,7 @@ const generatePortfolio = () => {
     projectDetailsDiv.appendChild(projectInfo);
     const projectSkills = document.createElement('p');
     projectSkills.className = 'project__skills';
-    projectSkills.textContent = `${projects[i].skills}`;
+    projectSkills.textContent = `Skills/technologies used: ${projects[i].skills}`;
     projectDetailsDiv.appendChild(projectSkills);
     const projectLinks = document.createElement('div');
     projectLinks.className = 'project__links';
@@ -109,7 +109,7 @@ const getLatestProjects = arr => {
     projectDetails.appendChild(projectInfo);
     const projectSkills = document.createElement('p');
     projectSkills.className = 'project__skills';
-    projectSkills.textContent = `${latestProjects[i].skills}`;
+    projectSkills.textContent = `Skills/technologies used: ${latestProjects[i].skills}`;
     projectDetails.appendChild(projectSkills);
     const projectLinks = document.createElement('div');
     projectLinks.className = 'project__links';

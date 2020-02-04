@@ -2,8 +2,8 @@ const projects = [
   {
     name: 'Personal Profile Page',
     type: 'Techdegree',
-    info: 'Customize a personal online profile by adding graphics, customizing text, and improving the look of a web page using Cascading Style Sheets.',
-    skills: 'HTML, CSS.',
+    info: 'Customized a personal online profile by adding graphics, customizing text, and improving the look of a web page using Cascading Style Sheets.',
+    skills: 'HTML, CSS',
     image: 'project-1.png',
     github: 'https://github.com/jmereardon17/techdegree-project-1',
     liveView: '/techdegree-project-1'
@@ -11,8 +11,8 @@ const projects = [
   {
     name: 'Responsive Layout',
     type: 'Techdegree',
-    info: 'Create a mobile-first webpage layout that adjusts to fit standard devices using HTML, CSS, and responsive design.',
-    skills: 'HTML, CSS Floats, Mobile-first.',
+    info: 'Developed a mobile-first webpage layout that adjusts to fit standard devices using HTML, CSS, and responsive design.',
+    skills: 'HTML, CSS Floats',
     image: 'project-2.png',
     github: 'https://github.com/jmereardon17/techdegree-project-2',
     liveView: '/techdegree-project-2'
@@ -20,8 +20,8 @@ const projects = [
   {
     name: 'Online Registration Form',
     type: 'Techdegree',
-    info: 'Build a responsive, mobile-first registration form using a variety of HTML form elements.',
-    skills: 'HTML, CSS Flexbox, Mobile-first.',
+    info: 'Developed a responsive, mobile-first registration form using a variety of HTML form elements.',
+    skills: 'HTML, CSS Flexbox',
     image: 'project-3.png',
     github: 'https://github.com/jmereardon17/techdegree-project-3',
     liveView: '/techdegree-project-3'
@@ -29,8 +29,8 @@ const projects = [
   {
     name: 'Web Style Guide',
     type: 'Techdegree',
-    info: 'Create a style guide that can act as a personal and custom Bootstrap that can be dropped into any project to speed up development in general.',
-    skills: 'Sass, SCSS, Mobile-first.',
+    info: 'Built a style guide that can act as a personal custom Bootstrap that can be dropped into any project to speed up development in general.',
+    skills: 'Sass',
     image: 'project-4.png',
     github: 'https://github.com/jmereardon17/techdegree-project-4',
     liveView: '/techdegree-project-4'
@@ -38,17 +38,26 @@ const projects = [
   {
     name: 'HSolutions',
     type: 'Freelance',
-    info: 'Responsive business webpage, fully designed and developed on the fly.',
-    skills: 'HTML, CSS, Bootstrap, Mobile-first.',
+    info: 'Developed and designed a responsive business webpage.',
+    skills: 'HTML, CSS, Bootstrap',
     image: 'project-5.png',
     github: 'https://github.com/jmereardon17/hsolutions-responsive-business-page',
     liveView: 'http://hsolutions.uk'
   },
   {
+    name: 'Randomized Quiz Game',
+    type: 'JavaScript Project',
+    info: 'Developed a Star Wars themed randomized quiz game using JavaScript.',
+    skills: 'JavaScript, jQuery, Sass, CSS Flexbox',
+    image: 'project-10.png',
+    github: 'https://github.com/jmereardon17/star-wars-randomized-quiz',
+    liveView: '/star-wars-randomized-quiz'
+  },
+  {
     name: 'Interactive Photo Gallery',
     type: 'Techdegree',
-    info: 'Create an interactive, searchable gallery of photos using JavaScript.',
-    skills: 'HTML, SCSS, JavaScript, jQuery plugin.',
+    info: 'Developed an interactive, searchable gallery of photos using JavaScript.',
+    skills: 'HTML, Sass, JavaScript, jQuery',
     image: 'project-6.png',
     github: 'https://github.com/jmereardon17/techdegree-project-5',
     liveView: '/techdegree-project-5'
@@ -56,8 +65,8 @@ const projects = [
   {
     name: 'Game Show App',
     type: 'Techdegree',
-    info: 'Create a browser word guessing game using JavaScript to randomize a phrase that players will try to guess.',
-    skills: 'JavaScript, jQuery, CSS.',
+    info: 'Developed a browser word guessing game using JavaScript to randomize a phrase that players can try to guess.',
+    skills: 'JavaScript, jQuery, CSS',
     image: 'project-7.png',
     github: 'https://github.com/jmereardon17/techdegree-project-6',
     liveView: '/techdegree-project-6'
@@ -65,8 +74,8 @@ const projects = [
   {
     name: 'WebApp Dashboard',
     type: 'Techdegree',
-    info: 'Build an interactive dashboard for a web application using SVG Graphics.',
-    skills: 'JavaScript, jQuery, SVG, Sass, SCSS, CSS Grid, Mobile-first.',
+    info: 'Built an interactive web application using supplied SVG icons and JavaScript-driven charts and graphs.',
+    skills: 'JavaScript, jQuery, SVG, Sass, CSS Grid',
     image: 'project-8.png',
     github: 'https://github.com/jmereardon17/techdegree-project-7',
     liveView: '/techdegree-project-7'
@@ -74,20 +83,11 @@ const projects = [
   {
     name: 'Employee Directory',
     type: 'Techdegree',
-    info: 'Create an employee directory by communicating with a third-party API.',
-    skills: 'JavaScript, Sass, SCSS, CSS Grid, CSS Flexbox, Mobile-first.',
+    info: 'Developed an employee directory by communicating with a third-party API.',
+    skills: 'JavaScript, Sass, CSS Grid, CSS Flexbox, HTML',
     image: 'project-9.png',
     github: 'https://github.com/jmereardon17/techdegree-project-8',
     liveView: '/techdegree-project-8'
-  },
-  {
-    name: 'Randomized Quiz Game',
-    type: 'Practice',
-    info: 'Create a Star Wars themed randomized quiz game using JavaScript.',
-    skills: 'JavaScript, jQuery, Sass, CSS Flexbox, Mobile-first.',
-    image: 'project-10.png',
-    github: 'https://github.com/jmereardon17/star-wars-randomized-quiz',
-    liveView: '/star-wars-randomized-quiz'
   }
 ];
 
