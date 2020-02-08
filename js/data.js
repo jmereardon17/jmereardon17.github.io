@@ -38,7 +38,7 @@ const projects = [
   {
     name: 'HSolutions',
     type: 'Freelance',
-    info: 'Developed and designed a responsive business webpage.',
+    info: 'Developed and designed a responsive business webpage for the company HSolutions, as part of freelance work.',
     skills: 'HTML, CSS, Bootstrap',
     image: 'project-5.png',
     github: 'https://github.com/jmereardon17/hsolutions-responsive-business-page',
@@ -81,9 +81,9 @@ const projects = [
     liveView: '/techdegree-project-7'
   },
   {
-    name: 'Employee Directory',
+    name: 'API Employee Directory',
     type: 'Techdegree',
-    info: 'Developed an employee directory by communicating with a third-party API.',
+    info: 'Developed an employee directory that displays 12 random "employee" data by communicating with a third-party API.',
     skills: 'JavaScript, Sass, CSS Grid, CSS Flexbox, HTML',
     image: 'project-9.png',
     github: 'https://github.com/jmereardon17/techdegree-project-8',
