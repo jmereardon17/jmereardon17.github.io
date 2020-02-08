@@ -56,7 +56,7 @@ const projects = [
   {
     name: 'Interactive Photo Gallery',
     type: 'Techdegree',
-    info: 'Developed an interactive, searchable gallery of photos using JavaScript.',
+    info: 'Developed an interactive, searchable gallery of photos using JavaScript and jQuery.',
     skills: 'HTML, Sass, JavaScript, jQuery',
     image: 'project-6.png',
     github: 'https://github.com/jmereardon17/techdegree-project-5',
