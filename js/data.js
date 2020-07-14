@@ -88,6 +88,15 @@ const projects = [
     image: 'project-9.png',
     github: 'https://github.com/jmereardon17/techdegree-project-8',
     liveView: '/techdegree-project-8'
+  },
+  {
+    name: 'React Book Finder App',
+    type: 'React Project',
+    info: 'Built a React Book finder app that fetches an API request from the Google Books API based on the users search.',
+    skills: 'HTML, CSS, JavaScript, React, Bootstrap',
+    image: 'project-11.png',
+    github: 'https://github.com/jmereardon17/react-book-finder-app',
+    liveView: '/react-book-finder-app'
   }
 ];
 
