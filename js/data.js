@@ -101,7 +101,7 @@ const projects = [
   {
     name: 'React To Do List App',
     type: 'React Project',
-    info: 'Developed a React "to do" list app that manages tasks with React State and localStorage for a “to do” list.',
+    info: 'Developed a React "to do" list app that manages tasks with React State and localStorage.',
     skills: 'HTML, CSS, JavaScript, React, localStorage, keyframes',
     image: 'project-12.png',
     github: 'https://github.com/jmereardon17/react-to-do-list-app',
