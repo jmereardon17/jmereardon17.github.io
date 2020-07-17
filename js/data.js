@@ -97,6 +97,15 @@ const projects = [
     image: 'project-11.png',
     github: 'https://github.com/jmereardon17/react-book-finder-app',
     liveView: '/react-book-finder-app'
+  },
+  {
+    name: 'React To Do List App',
+    type: 'React Project',
+    info: 'Developed a React "to do" list app that allows users to add tasks to a “to do” list. Users can mark tasks as completed as well as remove tasks. Tasks are saved in State as well as localStorage.',
+    skills: 'HTML, CSS, JavaScript, React, localStorage, keyframes',
+    image: 'project-12.png',
+    github: 'https://github.com/jmereardon17/react-to-do-list-app',
+    liveView: '/react-to-do-list-app'
   }
 ];
 
