@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie Reardon | Front End Web Developer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Rajdhani:400,500,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body style="background: #f6f6f6;">
+    <main>
+
+      <div class="container container--services">
+
+        <section class="section__service">
+          <form class="service-form" method="POST">
+            <div class="service-form__banner profile-logo profile-logo--dark">
+              <span class="profile__title">Jamie Reardon</span>
+              <span class="profile__slogan">Front End Web Developer</span>
+            </div>
+            <fieldset class="service-form__fieldset service-form__fieldset--first">
+              <legend class="service-form__legend headline__primary">
+                <span class="service-form__step">1</span>
+                Disclosure
+              </legend>
+              <div class="service-form__description">
+                <p>Before filling out the form, please read the below information.</p>
+                <p>This is a service to create a webpage/website to suit your needs. This service does <strong>not</strong> include any back-end development or CMS (Content Management System) features. If you are unsure what these terms mean, please see below:
+                </p>
+                <ul>
+                  <li>
+                    - <a class="link" href="https://careerfoundry.com/en/blog/web-development/whats-the-difference-between-frontend-and-backend/#4-what-is-backend-development" target="_blank">Back-end development</a>
+                  </li>
+                  <li>
+                    - <a
+                      class="link"
+                      href="https://www.optimizely.com/uk/optimization-glossary/content-management-system/#:~:text=A%20content%20management%20system%20(CMS,on%20a%20set%20of%20templates."
+                      target="_blank">Content Management System</a>
+                  </li>
+                </ul>
+                <p>To get an idea of what kind of webpage/website's are built using this service, please check out this <a class="link" href="http://hsolutions.uk" target="_blank">example</a> work.</p>
+                <p>I am a Web Developer, not a Web Designer, these are two completely different roles. If you are unsure of what the difference is between the two, please read this <a class="link" href="https://www.websitebuilderexpert.com/designing-websites/web-designer-vs-web-developer/" target="_blank">link</a>.
+                <p>Having said that, I prefer to take a mockup (image of a design in mind) and build it into a functional webpage/website. However, I can and have built websites without any resources/references and can do so for you. It is important that you fill out the information below as detailed as you can so that I can build a webpage/website based on your needs.</p>
+              </div>
+            </fieldset>
+
+            <fieldset class="service-form__fieldset">
+              <legend class="service-form__legend headline__primary">
+                <span class="service-form__step">2</span>
+                Your Information
+              </legend>
+              <div class="service-form__group">
+                <label class="service-form__label" for="firstName">Name <span class="error">*</span></label>
+                <input class="service-form__input" type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                <input class="service-form__input" type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+              </div>
+
+              <div class="service-form__group">
+                <label class="service-form__label" for="phone">Phone</label>
+                <input class="service-form__input" type="tel" name="phone" id="phone">
+              </div>
+
+              <div class="service-form__group">
+                <label class="service-form__label" for="email">Email <span class="error">*</span></label>
+                <input class="service-form__input" type="email" name="email" id="email" required>
+              </div>
+              
+            </fieldset>
+
+            <fieldset class="service-form__fieldset">
+              <legend class="service-form__legend headline__primary">
+                <span class="service-form__step">3</span>
+                Service Details
+              </legend>
+              <p style="margin-top: 55px;">Please read and fill in the questions carefully. The answers you provide will depend on whether this service is for
+                you or not. If you are unsure about any of the questions below, please feel free to get in touch via Email.</p>
+              <p>This service is for simple webpages/websites only, please see the example work link in the disclosure for an idea.</p>
+              
+              <div class="service-form__group">
+                <p class="service-form__question">Do you require forms for your webpage/website? <span class="error">*</span></p>
+                <div class="flex-group">
+                  <input type="radio" name="forms" id="formsYes" value="formsYes" class="service-form__input service-form__input--radio">
+                  <label for="formsYes" class="service-form__label">Yes</label>
+
+                  <input type="radio" name="forms" id="formsNo" value="formsNo" class="service-form__input service-form__input--radio">
+                  <label for="formsNo" class="service-form__label">No</label>
+                </div>
+              
+              </div>
+
+              <div class="service-form__group">
+                <p class="service-form__question">Do you require carousels (Image slideshows) for your webpage/website? <span class="error">*</span> Example <a href="https://www.w3schools.com/bootstrap/bootstrap_carousel.asp" target="_blank" class="link">here</a>.</p>
+                <div class="flex-group">
+                  <input type="radio" name="carousels" id="carouselsYes" value="carouselsYes"
+                    class="service-form__input service-form__input--radio">
+                  <label for="carouselsYes" class="service-form__label">Yes</label>
+              
+                  <input type="radio" name="carousels" id="carouselsNo" value="carouselsNo"
+                    class="service-form__input service-form__input--radio">
+                  <label for="carouselsNo" class="service-form__label">No</label>
+                </div>
+              
+              </div>
+
+              <div class="service-form__group">
+                <p class="service-form__question">Do you require Image gallery lightboxes? <span class="error">*</span> Example <a
+                    href="https://www.w3schools.com/howto/howto_js_lightbox.asp" target="_blank" class="link">here</a>.</p>
+                <div class="flex-group">
+                  <input type="radio" name="lightboxes" id="lightboxesYes" value="lightboxesYes"
+                    class="service-form__input service-form__input--radio">
+                  <label for="lightboxesYes" class="service-form__label">Yes</label>
+              
+                  <input type="radio" name="lightboxes" id="lightboxesNo" value="lightboxesNo"
+                    class="service-form__input service-form__input--radio">
+                  <label for="lightboxesNo" class="service-form__label">No</label>
+                </div>
+              
+              </div>
+
+              <div class="service-form__group">
+                <p class="service-form__question">Do you require stock images? <span class="error">*</span> More info <a
+                    href="https://www.stockphotosecrets.com/questions-answers/what-are-stock-images.html" target="_blank" class="link">here</a>.</p>
+                <div class="flex-group">
+                  <input type="radio" name="stockPhotos" id="stockYes" value="stockYes"
+                    class="service-form__input service-form__input--radio">
+                  <label for="stockYes" class="service-form__label">Yes</label>
+                  <span class="service-form__label--expanded">(Will add to total service cost).</span>
+              
+                  <input type="radio" name="stockPhotos" id="stockNo" value="stockNo"
+                    class="service-form__input service-form__input--radio">
+                  <label for="stockNo" class="service-form__label">No</label>
+                  <span class="service-form__label--expanded">(You will provide your own photos for the design).</span>
+                </div>
+              
+              </div>
+
+              <div class="service-form__group">
+                <p class="service-form__question">Do you require a logo? <span class="error">*</span></p>
+
+                <div class="flex-group">
+                  <input type="radio" name="logo" id="logoYes" value="logoYes" class="service-form__input service-form__input--radio">
+                  <label for="logoYes" class="service-form__label">Yes</label>
+                  <span class="service-form__label--expanded">(Will be text logo only).</span>
+                
+                  <input type="radio" name="logo" id="logoNo" value="logoNo" class="service-form__input service-form__input--radio">
+                  <label for="logoNo" class="service-form__label">No</label>
+                  <span class="service-form__label--expanded">(You will provide your own logo for the design if needed).</span>
+                </div>
+
+                <label for="info" class="service-form__label service-form__question">Webpage/website information <span class="error">*</span></label>
+                <textarea class="service-form__input service-form__input--textarea" name="info" id="info" cols="30" rows="10" placeholder="Please provide as much information as possible, such as colors you'd like (you can also link to websites you like), the content you want on your page (e.g. about information), contact information, social-media links etc."></textarea>
+
+              </div>
+
+              <div class="service-form__group">
+                <p class="service-form__question">Checkbox (You will need) <span class="error">*</span></p>
+              
+                <div class="flex-group">
+                  <input type="checkbox" name="checklist" id="webhosting" value="webhosting" class="service-form__input service-form__input--radio">
+                  <label for="webhosting" class="service-form__label">Web hosting - More info <a href="https://www.namecheap.com/hosting/what-is-web-hosting-definition/" target="_blank" class="link">here</a>.</label>
+                </div>
+
+                <div class="flex-group">
+                  <input type="checkbox" name="checklist" id="domain" value="domain"
+                    class="service-form__input service-form__input--radio">
+                  <label for="domain" class="service-form__label">Domain - More info <a href="https://www.website.com/beginnerguide/domainnames/8/1/What-is-a-domain-name?.ws" target="_blank" class="link">here</a>.</label>
+                </div>
+
+                <div class="flex-group">
+                  <input type="checkbox" name="checklist" id="cpanel" value="cpanel"
+                    class="service-form__input service-form__input--radio">
+                  <label for="cpanel" class="service-form__label">Control Panel access - Web Hosting</label>
+                </div>
+              
+              </div>
+
+              <div class="service-form__group">
+
+                <label for="sign" class="service-form__label service-form__question">I agree this service is for a one time use, not the
+                  process of ongoing support, nor additional websites/webpages. I also agree that if I want things updating/changing to
+                  the webpage/website that I may need to pay additional fees. Sign name below. <span class="error">*</span></label>
+                <input type="text" id="sign" name="sign" class="service-form__input">
+
+              </div>
+
+            </fieldset>
+
+            <button class="service-form__btn btn btn--all-projects" type="submit" name="serviceSubmit">Submit</button>
+          </form>
+          
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <div class="footer__info">
+          <span class="footer__copy">All Rights Reserved &copy;</span>
+          <span class="name">Jamie Reardon</span>
+          <div class="footer__social-media">
+            <a class="icon-linkedin" href="https://www.linkedin.com/in/jmereardon17" target="_blank">LinkedIn</a>
+            <a class="icon-github" href="https://www.github.com/jmereardon17" target="_blank">GitHub</a>
+            <a class="icon-treehouse" href="https://teamtreehouse.com/jamiereardon" target="_blank">Treehouse</a>
+            <a class="icon-facebook" href="https://www.facebook.com/jme.reardon17" target="_blank">Facebook</a>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

@@ -257,3 +257,11 @@ section {
 .hidden {
   display: none;
 }
+.error {
+  color: #ce0000;
+  font-weight: 700;
+}
+
+.flex-group {
+  @include flex($wrap: wrap) { align-items: center; };
+}

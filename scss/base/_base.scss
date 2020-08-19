@@ -34,6 +34,14 @@ main {
   flex: 1;
   padding-bottom: 30px;
 }
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+legend {
+  display: block;
+}
 :focus {
   outline: 0;
 }

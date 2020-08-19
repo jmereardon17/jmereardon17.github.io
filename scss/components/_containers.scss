@@ -2,6 +2,9 @@
 
 .container {
   padding: 0 5%;
+  &--services {
+    padding: 0;
+  }
   @include mq(998px) {
     width: 90%;
     margin: 0 auto;
