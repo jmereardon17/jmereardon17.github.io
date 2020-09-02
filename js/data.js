@@ -38,10 +38,10 @@ const projects = [
   {
     name: 'HSolutions',
     type: 'Freelance',
-    info: 'Developed and designed a responsive business webpage for the company HSolutions, as part of freelance work.',
+    info: 'Developed and designed a responsive business webpage for the company HSolutions as part of freelance work.',
     skills: 'HTML, CSS, Bootstrap',
     image: 'project-5.png',
-    github: 'https://github.com/jmereardon17/hsolutions-responsive-business-page',
+    github: '#',
     liveView: 'http://hsolutions.uk'
   },
   {
@@ -106,6 +106,15 @@ const projects = [
     image: 'project-12.png',
     github: 'https://github.com/jmereardon17/react-to-do-list-app',
     liveView: '/react-to-do-list-app'
+  },
+  {
+    name: 'Otus Property Investment',
+    type: 'Freelance',
+    info: 'Developed and designed a responsive business webpage for the company Otus as part of freelance work.',
+    skills: 'HTML, CSS, JavaScript',
+    image: 'project-13.png',
+    github: '#',
+    liveView: 'http://otuspropertyinvestment.co.uk'
   }
 ];
 
