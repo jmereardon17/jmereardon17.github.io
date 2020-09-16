@@ -125,6 +125,7 @@
   right: 0;
   opacity: 0;
   transition: opacity .5s ease;
+  z-index: 2;
   &__message {
     font-size: 1.05em;
     color: $white;

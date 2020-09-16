@@ -1684,6 +1684,7 @@ section {
   right: 0;
   opacity: 0;
   transition: opacity 0.5s ease;
+  z-index: 2;
 }
 .form-alert__message {
   font-size: 1.05em;
