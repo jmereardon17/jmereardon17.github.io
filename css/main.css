@@ -1675,4 +1675,24 @@ section {
   font-weight: 600;
 }
 
+.form-alert {
+  padding: 13px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.form-alert__message {
+  font-size: 1.05em;
+  color: #fff;
+}
+.form-alert.success {
+  background: #B4C890;
+}
+.form-alert.error {
+  background: #db5252;
+}
+
 /*# sourceMappingURL=main.css.map */

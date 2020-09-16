@@ -115,3 +115,23 @@
     font-weight: 600;
   }
 }
+
+.form-alert {
+  padding: 13px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .5s ease;
+  &__message {
+    font-size: 1.05em;
+    color: $white;
+  }
+  &.success {
+    background: $color-primary-lt;
+  }
+  &.error {
+    background: #db5252;
+  }
+}
